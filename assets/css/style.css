@@ -154,6 +154,7 @@ article.home h2 a,
 article.home h3 a,
 article.home h4 a {
 	color: #f2756a;
+	margin-right: 10px;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
@@ -174,8 +175,8 @@ article.home img.appicon {
 }
 
 article.home img.apptype {
-	width: 30px;
-	margin-left: 10px;
+	width: 20px;
+	margin-left: -3px;
 }
 
 article.home td {
@@ -295,4 +296,15 @@ ul.dropdown-menu>li>a>i.fa {
 	border-color: rgba(158, 158, 158, 0.65);
 	color: rgba(158, 158, 158, 0.65);
 	padding: 10px 20px 10px 10px;
+}
+
+.appicon_post {
+	width: 50px;
+	float: left;
+	border-radius: 50%;
+	margin-right: 10px;
+	display: block;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.11);
+	border-style: solid;
 }

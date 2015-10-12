@@ -36,6 +36,11 @@ tagline:
                 <a href="{{ post.external_url }}" target="_blank">{{ post.title }}</a><img class="apptype" src="/assets/media/{{ post.apptype }}.png">
                 {% else %}
               <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a><img class="apptype" src="/assets/media/{{ post.apptype }}.png">
+              {% if post.app_os %}
+                {% for os in post.app_os %}
+                    <img class="apptype" src="/assets/media/{{ os }}.png" alt="{{ os }}">
+                {% endfor %}
+              {% endif %}
               {% endif %}
             </h2>
 

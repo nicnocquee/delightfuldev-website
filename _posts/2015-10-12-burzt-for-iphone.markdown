@@ -6,7 +6,7 @@ categories: [iphone]
 tags: [photography]
 description: The easiest way to convert burst photos to GIF.
 icon: "burzt.png"
-apptype: "iphone"
+apptype: "mobile"
 permalink: "/burzt"
 app_store: "https://itunes.apple.com/jp/app/burzt-burst-photos-to-gif/id1025006634?l=en&mt=8"
 ---

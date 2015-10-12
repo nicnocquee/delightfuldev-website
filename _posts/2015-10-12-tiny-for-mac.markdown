@@ -6,7 +6,8 @@ categories: [mac]
 tags: [utilities]
 description: Make Your Screen Capture Smarter.
 icon: "tiny.png"
-apptype: "mac"
+apptype: "desktop"
+app_os: ["mac"]
 permalink: "/tiny"
 ---
 

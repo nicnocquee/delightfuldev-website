@@ -6,10 +6,11 @@ categories: [iphone,android]
 tags: [game,ios,android]
 description: "Fun Puzzle Number Game for iOS and Android."
 icon: "make9.png"
-apptype: "iphone"
+apptype: "mobile"
 permalink: "/make9"
 app_store: "https://itunes.apple.com/us/app/make9/id1044061338?ls=1&mt=8"
 app_published: 0
+app_os: ["ios","android"]
 screenshots: ["/assets/media/make9/screenshot0.png","/assets/media/make9/screenshot1.png","/assets/media/make9/screenshot2.png","/assets/media/make9/screenshot3.png","/assets/media/make9/screenshot4.png"]
 ---
 

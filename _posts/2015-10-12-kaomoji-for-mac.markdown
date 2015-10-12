@@ -6,6 +6,7 @@ categories: [mac]
 tags: [utilities]
 description: Easily insert kaomoji to any apps on your Mac.
 icon: "kaomoji.png"
-apptype: "mac"
+apptype: "desktop"
+app_os: ["mac"]
 external_url: "http://www.kaomojiapp.com/"
 ---

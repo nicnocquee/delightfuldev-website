@@ -1,5 +1,14 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}<img class="apptype" src="/assets/media/{{ page.apptype }}.png"></h1>
+    {% if page.icon %}
+    <img class="appicon_post" src="/assets/media/{{ page.icon }}">
+    {% endif %}
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}<img class="apptype" src="/assets/media/{{ page.apptype }}.png">
+  {% if page.app_os %}
+    {% for os in page.app_os %}
+        <img class="apptype" src="/assets/media/{{ os }}.png">
+    {% endfor %}
+  {% endif %}
+  </h1>
 </div>
 
 <article>
