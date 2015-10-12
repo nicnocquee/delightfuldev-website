@@ -236,3 +236,7 @@ ul.dropdown-menu>li>a>i.fa {
   margin-bottom: 40px;
   max-width: 30%;
 }
+
+.brand {
+	max-width: 20px;
+}
