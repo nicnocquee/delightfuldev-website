@@ -11,6 +11,7 @@ permalink: "/make9"
 app_store: "https://itunes.apple.com/us/app/make9/id1044061338?ls=1&mt=8"
 app_published: 0
 app_os: ["ios","android"]
+cover: "/assets/media/make9/fb-cover.png"
 screenshots: ["/assets/media/make9/screenshot0.png","/assets/media/make9/screenshot1.png","/assets/media/make9/screenshot2.png","/assets/media/make9/screenshot3.png","/assets/media/make9/screenshot4.png"]
 ---
 

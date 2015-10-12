@@ -24,6 +24,19 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 
+	<meta property="og:site_name" content="{{ site.title }}" />
+	 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+	 {% if page.description %}
+	 <meta property="og:description" content="{{ page.description | strip_html | strip_newlines | truncate: 200 }}" />
+	 {% elsif site.fb_description %}
+	 <meta property="og:description" content="{{ site.fb_description | strip_html | strip_newlines | truncate: 200 }}" />
+	 {% elsif site.description %}
+	 <meta property="og:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
+	 {% endif %}
+	 <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.cover | prepend: site.url }}{% endif %}" />
+	 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
+	 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" >
+
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
 	<link rel="shortcut icon" href="images/favicon.ico">

@@ -14,9 +14,11 @@ defaults:
     values:
       title: DelightfulDev
 
+url: http://www.delightfuldev.com
 logo: "/assets/media/logo.png"
+cover: "/assets/media/delightfuldev-facebook-cover.png"
 title: DelightfulDev
-description: Making Apps
+description: Making Fun Apps
 twitter: delightfuldev
 email: nico@delightfuldev.com
 author:
