@@ -68,7 +68,9 @@
 		  {% assign tags_list = nil %}
 		</ul>
 		{% endunless %} -->
-
+{% if page.app_store %}
+        <a  href={{ page.app_store }} ><img src="/assets/media/app_store.png" class="download"></a>
+        {% endif %}
 		<hr>
 
 		<div>
