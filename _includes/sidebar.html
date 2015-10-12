@@ -6,11 +6,14 @@
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
     </h3>
+	<h2 class="description">
+		{{ site.description }}
+	</h2>
 </header>
 
 {% if site.author.bio %}
 <div id="bio" class="text-center">
-	{{ site.author.bio }}
+	by <a href="https://twitter.com/{{site.author.twitter}}">{{ site.author.name }}</a>
 </div>
 {% endif %}
 
@@ -23,16 +26,16 @@
 			</a>
 		</li>
 		{% endif %}
-		{% if site.author.twitter %}
+		{% if site.twitter %}
 		<li>
-			<a class="btn btn-default btn-sm btn-contact" href="https://twitter.com/{{ site.author.twitter }}">
+			<a class="btn btn-default btn-sm btn-contact" href="https://twitter.com/{{ site.twitter }}">
 				<i class="fa fa-twitter fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
-		{% if site.author.email %}
+		{% if site.email %}
 		<li>
-			<a class="btn btn-default btn-sm btn-contact" href="mailto:{{ site.author.email }}">
+			<a class="btn btn-default btn-sm btn-contact" href="mailto:{{ site.email }}">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>

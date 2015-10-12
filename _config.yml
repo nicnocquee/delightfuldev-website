@@ -17,10 +17,12 @@ defaults:
 logo: "/assets/media/logo.png"
 title: DelightfulDev
 description: Making Apps
+twitter: delightfuldev
+email: nico@delightfuldev.com
 author:
   name: Nico Prananta
   email: nico@delightfuldev.com
-  twitter: delightfuldev
+  twitter: nicnocquee
   bio: Making Apps
 
 categories_path: categories.html
