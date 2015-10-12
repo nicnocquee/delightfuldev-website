@@ -2,3 +2,4 @@ _site
 .sass-cache
 .deploy
 DS_Store
+_deploy.yml

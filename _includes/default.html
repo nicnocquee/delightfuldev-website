@@ -5,6 +5,8 @@
 	<title>{{ page.title }}</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
+	{% else %}
+	<meta name="description" content="{{ site.description }}">
 	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 
@@ -48,13 +50,13 @@
 				<i class="fa fa-github"></i>
 			</a>
 			{% endif %}
-			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
+			{% if site.twitter %}
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.twitter }}">
 				<i class="fa fa-twitter"></i>
 			</a>
 			{% endif %}
-			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+			{% if site.email %}
+			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.email }}">
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
