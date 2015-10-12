@@ -5,7 +5,7 @@
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}<img class="apptype" src="/assets/media/{{ page.apptype }}.png">
   {% if page.app_os %}
     {% for os in page.app_os %}
-        <img class="apptype" src="/assets/media/{{ os }}.png">
+        <img class="apptype" src="/assets/media/{{ os }}.png" alt="{{ os }}">
     {% endfor %}
   {% endif %}
   </h1>
@@ -90,7 +90,7 @@
 		{% endunless %} -->
 {% if page.app_store %}
  {% if page.app_published == 1 %}
-        <a  href={{ page.app_store }} ><img src="/assets/media/app_store.png" class="download"></a>
+        <a  href={{ page.app_store }} target="_blank"><img src="/assets/media/app_store.png" class="download"></a>
         {% else %}
         <div class="coming_soon">Coming Soon</div>
         {% endif %}
