@@ -7,4 +7,5 @@ tags: [photography]
 description: The easiest way to convert burst photos to GIF.
 icon: "burzt.png"
 apptype: "iphone"
+permalink: "/burzt"
 ---

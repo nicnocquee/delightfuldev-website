@@ -7,4 +7,7 @@ tags: [utilities]
 description: Make Your Screen Capture Smarter.
 icon: "tiny.png"
 apptype: "mac"
+permalink: "/tiny"
 ---
+
+Say goodbye to boring and uninformative screen shots names. Everytime you take screen shot of your Mac, Tiny will rename your screen shot into a meaningful file name. Tiny does not have a window. It lives in your Mac's Menu Bar.

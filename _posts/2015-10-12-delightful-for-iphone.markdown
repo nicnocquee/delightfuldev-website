@@ -7,4 +7,5 @@ tags: [photography]
 description: A delightful, and beautiful Trovebox client for iPhone. Free and Open Source.
 icon: "delightful.png"
 apptype: "iphone"
+permalink: "/delightful"
 ---
