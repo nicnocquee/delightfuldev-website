@@ -7,5 +7,5 @@ tags: [photography]
 description: Create and view GIFs, smart categories, photostrips, EXIF and more.
 icon: "lovely.png"
 apptype: "iphone"
-permalink: "/lovely"
+external_url: "http://www.getlovelyapp.com/"
 ---

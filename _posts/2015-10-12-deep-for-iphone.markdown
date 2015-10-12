@@ -7,5 +7,5 @@ tags: [photography]
 description: The easiest way to embed quotes on captivating images using your iPhone.
 icon: "deep.png"
 apptype: "iphone"
-permalink: "/deep"
+external_url: "http://www.getdeepapp.com"
 ---
