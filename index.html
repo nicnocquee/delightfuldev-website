@@ -23,14 +23,14 @@ tagline:
     {{ post.date | date: "%Y" }}
   </span> -->
 
-<table>
+<table width="100%">
     <tr>
-        <td>
+        <td width="10%">
             {% if post.icon %}
             <img class="appicon" src="/assets/media/{{ post.icon }}">
             {% endif %}
         </td>
-        <td>
+        <td width="90%">
             <h2>
               <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a><img class="apptype" src="/assets/media/{{ post.apptype }}.png">
             </h2>
