@@ -189,8 +189,10 @@ article.home td {
 }
 
 footer {
+	text-align: center;
 	padding-top: 15px;
-	font-family: 'Ubuntu';
+	padding-bottom: 15px;
+	color: rgb(168, 167, 173);
 }
 
 /* nav-vertical-tabs component */
@@ -261,6 +263,7 @@ ul.dropdown-menu>li>a>i.fa {
 #screenshots_gallery {
 	overflow-x: scroll;
 	overflow-y:hidden;
+	-webkit-overflow-scrolling: touch;
 	margin-top: 20px;
 	margin-bottom: 40px;
 	margin-left: auto;
