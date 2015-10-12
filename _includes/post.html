@@ -17,6 +17,17 @@
 	   {{ page.date | date: "%Y" }}
 	 </span> -->
 	  <div class="article_body">
+
+{% if page.screenshots %}
+    <div id="screenshots_gallery">
+        <ul>
+        {% for screenshot in page.screenshots %}
+            <li><img src={{ screenshot }} ></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
 	  {{ content }}
 	  </div>
 
@@ -69,8 +80,12 @@
 		</ul>
 		{% endunless %} -->
 {% if page.app_store %}
+ {% if page.app_published == 1 %}
         <a  href={{ page.app_store }} ><img src="/assets/media/app_store.png" class="download"></a>
+        {% else %}
+        <div class="coming_soon">Coming Soon</div>
         {% endif %}
+{% endif %}
 		<hr>
 
 		<div>

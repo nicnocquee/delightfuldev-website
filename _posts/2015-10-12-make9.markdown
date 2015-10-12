@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Make9"
+date: 2015-10-12T21:24:06+09:00
+categories: [iphone,android]
+tags: [game,ios,android]
+description: "Fun Puzzle Number Game for iOS and Android."
+icon: "make9.png"
+apptype: "iphone"
+permalink: "/make9"
+app_store: "https://itunes.apple.com/us/app/make9/id1044061338?ls=1&mt=8"
+app_published: 0
+screenshots: ["/assets/media/make9/screenshot0.png","/assets/media/make9/screenshot1.png","/assets/media/make9/screenshot2.png","/assets/media/make9/screenshot3.png","/assets/media/make9/screenshot4.png"]
+---
+
+# Description
+
+Make9 is a simple puzzle number game where the objective is to make 「9」 by tapping the numbers and operators. The game is over when you can no longer make nine.
+
+★ Go through 13 challenging levels.
+
+★ Play the unlimited mode and reach the highest score you can get.
+
+★ Collect gold coins from Gold Rush mode to get items which can help you when you're in pinch!
+
+# Price
+
+Free with ads. In app purchase is available to remove ads.
