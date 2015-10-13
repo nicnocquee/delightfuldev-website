@@ -2,7 +2,7 @@
 layout: post
 title: "Make9"
 date: 2015-10-12T21:24:06+09:00
-categories: [iphone,android]
+categories: [mobile,ios,android]
 tags: [game,ios,android]
 description: "Fun Puzzle Number Game for iOS and Android."
 icon: "make9.png"
