@@ -9,7 +9,7 @@ icon: "burzt.png"
 apptype: "mobile"
 permalink: "/burzt"
 app_published: 1
-app_store: "https://itunes.apple.com/jp/app/burzt-burst-photos-to-gif/id1025006634?l=en&mt=8"
+app_links: [{image: "/assets/media/app_store.png",  url: "https://itunes.apple.com/jp/app/burzt-burst-photos-to-gif/id1025006634?l=en&mt=8", coming_soon_image: "/assets/media/app_store_coming_soon.png", published: 1}]
 screenshots: ["/assets/media/burzt/screenshot1.png", "/assets/media/burzt/screenshot2.png"]
 ---
 

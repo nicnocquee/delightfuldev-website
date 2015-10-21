@@ -248,12 +248,13 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 .download {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  max-width: 30%;
+  display: inline;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.download img {
+	max-width: 200px;
 }
 
 .brand {
@@ -310,4 +311,9 @@ ul.dropdown-menu>li>a>i.fa {
 	border-width: 1px;
 	border-color: rgba(0, 0, 0, 0.11);
 	border-style: solid;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
 }

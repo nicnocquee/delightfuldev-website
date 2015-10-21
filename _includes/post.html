@@ -88,13 +88,21 @@
 		  {% assign tags_list = nil %}
 		</ul>
 		{% endunless %} -->
-{% if page.app_store %}
- {% if page.app_published == 1 %}
-        <a  href={{ page.app_store }} target="_blank"><img src="/assets/media/app_store.png" class="download"></a>
-        {% else %}
-        <div class="coming_soon">Coming Soon</div>
+        <div class="table text-center">
+{% if page.app_links %}
+    <ul class="list-unstyled list-inline">
+    {% for linkObjects in page.app_links %}
+        {% if linkObjects.published == 1 %}
+            <li class="download"><a  href={{ linkObjects.url }} target="_blank"><img src={{ linkObjects.image }}>{{ linkObjects.text }}</a></li>
+        {% else if linkObjects.coming_soon_image %}
+            <li class="download"><img src={{ linkObjects.coming_soon_image }}></li>
         {% endif %}
+    {% endfor %}
+    </ul>
+{% else %}
+        <div class="coming_soon">Coming Soon</div>
 {% endif %}
+</div>
 		<hr>
 
 		<div>
