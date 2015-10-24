@@ -14,6 +14,8 @@ app_os: ["ios","android"]
 cover: "/assets/media/make9/fb-cover.png"
 screenshots: ["/assets/media/make9/screenshot0.png","/assets/media/make9/screenshot1.png","/assets/media/make9/screenshot2.png","/assets/media/make9/screenshot3.png","/assets/media/make9/screenshot4.png"]
 video: https://www.youtube.com/embed/rxs-AuZxjEM
+video_width: 260
+video_height: 460
 ---
 
 # Description
