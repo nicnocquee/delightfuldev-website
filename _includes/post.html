@@ -36,9 +36,15 @@
         </ul>
     </div>
 {% endif %}
-
+{% if page.video %}
+      <div class="text-center videoWrapper">
+          <iframe width="420" height="315" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+{% endif %}
 	  {{ content }}
 	  </div>
+
+
 
 		<!-- {% unless page.categories == empty %}
 		<ul class="tag_box list-unstyled list-inline">
@@ -99,8 +105,6 @@
         {% endif %}
     {% endfor %}
     </ul>
-{% else %}
-        <div class="coming_soon">Coming Soon</div>
 {% endif %}
 </div>
 		<hr>
