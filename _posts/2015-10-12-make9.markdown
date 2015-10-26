@@ -8,7 +8,7 @@ description: "Fun Puzzle Number Game for iOS and Android."
 icon: "make9.png"
 apptype: "mobile"
 permalink: "/make9"
-app_links: [{image: "/assets/media/playstore.png", url: "https://play.google.com/store/apps/details?id=com.delightfuldev.make9", published: 1}, {image: "/assets/media/app_store.png",  url: "https://itunes.apple.com/us/app/make9/id1044061338?ls=1&mt=8", coming_soon_image: "/assets/media/app_store_coming_soon.png", published: 0}]
+app_links: [{image: "/assets/media/playstore.png", url: "https://play.google.com/store/apps/details?id=com.delightfuldev.make9", published: 1}, {image: "/assets/media/app_store.png",  url: "https://itunes.apple.com/us/app/make9-number-puzzle-game/id1044061338?ls=1&mt=8", coming_soon_image: "/assets/media/app_store_coming_soon.png", published: 1}]
 app_published: 0
 app_os: ["ios","android"]
 cover: "/assets/media/make9/fb-cover.png"
