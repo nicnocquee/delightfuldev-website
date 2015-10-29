@@ -8,7 +8,7 @@ description: "Fun Puzzle Number Game for iOS and Android."
 icon: "make9.png"
 apptype: "mobile"
 permalink: "/make9"
-app_links: [{image: "/assets/media/playstore.png", url: "https://play.google.com/store/apps/details?id=com.delightfuldev.make9", published: 1}, {image: "/assets/media/app_store.png",  url: "https://itunes.apple.com/us/app/make9-number-puzzle-game/id1044061338?ls=1&mt=8", coming_soon_image: "/assets/media/app_store_coming_soon.png", published: 1}]
+app_links: [{image: "/assets/media/playstore.png", url: "https://play.google.com/store/apps/details?id=com.delightfuldev.make9&referrer=utm_source%3Dhomepage%26utm_medium%3Dwebsite%26anid%3Dadmob", published: 1}, {image: "/assets/media/app_store.png",  url: "https://itunes.apple.com/app/apple-store/id1044061338?pt=320144&ct=homepage&mt=8", coming_soon_image: "/assets/media/app_store_coming_soon.png", published: 1}]
 app_published: 0
 app_os: ["ios","android"]
 cover: "/assets/media/make9/fb-cover.png"
@@ -20,7 +20,9 @@ video_height: 460
 
 # Description
 
-Make9 is a simple puzzle number game where the objective is to make 「9」 by tapping the numbers and operators. The game is over when you can no longer make nine.
+Make9 is a simple puzzle number game where the objective is to make 「9」 by tapping the numbers and operators.
+
+Make9's playful colors and fun background music makes it perfect to play when you're on the train, waiting for your friend at the mall, etc. The dark mode makes it pleasant to play Make9 before you sleep.
 
 ★ Go through 13 challenging levels.
 
