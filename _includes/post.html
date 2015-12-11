@@ -31,7 +31,11 @@
     <div id="screenshots_gallery">
         <ul>
         {% for screenshot in page.screenshots %}
-            <li><img src={{ screenshot }} ></li>
+            {% assign img_class = '' %}
+            {% if page.screenshots_is_landscape %}
+                {% assign img_class = 'id="screenshots_landscape"' %}
+            {% endif %}
+            <li><img src={{ screenshot }} {{img_class}}  ></li>
         {% endfor %}
         </ul>
     </div>
