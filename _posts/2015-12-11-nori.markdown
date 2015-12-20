@@ -10,8 +10,8 @@ app_os: ["mac"]
 apptype: "desktop"
 permalink: "/nori"
 video: https://www.youtube.com/embed/nqs3FOgZ4tM
-video_width: 560
-video_height: 315
+video_width: 100%
+video_height: 400
 cover: "/assets/media/nori/Nori-facebook-cover.jpg"
 screenshots: ["/assets/media/nori/Nori-screenshot-1-text.png","/assets/media/nori/Nori-screenshot-2-text.png","/assets/media/nori/Nori-screenshot-3-text.png"]
 screenshots_is_landscape: true
