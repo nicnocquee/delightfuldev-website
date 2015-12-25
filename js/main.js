@@ -85,6 +85,7 @@
 
 	function init() {
 		initEvents();
+
 		if (isOpen) {
 			closeContent();
 		}
@@ -196,7 +197,6 @@
 		}
 		// after the transition is finished:
 		onEndTransition(zoomer, function() {
-			window.location = '/'+item.getAttribute('data-content');
 
 			if (isSafari()) {
 				setTimeout(function() {
@@ -205,10 +205,10 @@
 						dynamics.css(bodyEl, { scale: 1 });
 
 						// fix for safari (allowing fixed children to keep position)
-						bodyEl.style.WebkitTransform = 'none';
-						bodyEl.style.transform = 'none';
+						bodyEl.style.WebkitTransform = '';
+						bodyEl.style.transform = '';
 					}
-
+					scrollContainer.removeEventListener('scroll', noscroll);
 					classie.remove(zoomer, 'zoomer--notrans');
 					classie.remove(zoomer, 'zoomer--active');
 					zoomer.style.WebkitTransform = 'none';
@@ -218,6 +218,8 @@
 
 
 			isOpen = false;
+
+			window.location = '/'+item.getAttribute('data-content');
 
 			return;
 		});
@@ -250,45 +252,7 @@
 			// reset scrolling permission
 			lockScroll = false;
 			scrollContainer.removeEventListener('scroll', noscroll);
-window.history.back();
-/*
-			if (document.referrer == "") {
-			    window.location = "/";
-			} else {
-			    window.history.back();
-			}
-			*/
-			return;
-
-			/* fix for safari flickering */
-			//zoomer.style.WebkitTransform = 'translate3d(0,0,0) scale3d(1,1,1)';
-			//zoomer.style.transform = 'translate3d(0,0,0) scale3d(1,1,1)';
-			/* fix for safari flickering */
-
-			// scale up - behind the scenes - the item again (without transition)
-			//applyTransforms(zoomer);
-
-			// animate/scale down the item
-			// setTimeout(function() {
-			// 	classie.remove(zoomer, 'zoomer--notrans');
-			// 	classie.remove(zoomer, 'zoomer--active');
-			// 	zoomer.style.WebkitTransform = 'translate3d(0,0,0) scale3d(1,1,1)';
-			// 	zoomer.style.transform = 'translate3d(0,0,0) scale3d(1,1,1)';
-			// }, 25);
-
-			if( bodyScale ) {
-				dynamics.css(bodyEl, { scale: bodyScale });
-				dynamics.animate(bodyEl, { scale: 1 }, {
-					type: dynamics.easeInOut,
-					duration: 500
-				});
-			}
-
-
-
-			isOpen = false;
-
-
+			window.history.back();
 		});
 	}
 
