@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Make9 - Number Puzzle Game for iOS and Android"
+subtitle: "You will sick of numbers."
+date:   2015-12-23 12:32:24
+categories: iphone
+permalink: "make9"
+device: "iphone"
+app_preview: "/images/make9/preview-make9.png"
+name: "Make9"
+tagline: "Number Puzzle Game for iOS and Android"
+app_icon: "/images/make9/Make9.png"
+---
+
+
+
+{% img center | /images/make9/make9-android-iphone.png | Make9 for Android and iOS %}
+
+{% textalign center %}
+Make9 is a simple puzzle number game where the objective is to make 「9」 by tapping the numbers and operators. The playful colors and fun background music makes it perfect to play when you’re on the train, waiting for your friend at the mall, etc. The dark mode makes it pleasant to play Make9 before you sleep.
+{% endtextalign %}
+
+{% youtube rxs-AuZxjEM %}
+
+{% section_title Features %}
+
+{% features %}
+Go through 13 challenging levels.
+Play the unlimited mode and reach the highest score you can get.
+Collect gold coins from Gold Rush mode to get items which can help you when you’re in pinch!
+{% endfeatures %}
+
+{% section_title Download %}
+
+{% download app_store | https://itunes.apple.com/app/apple-store/id1044061338?pt=320144&ct=homepage&mt=8 %}
+{% download play_store | https://play.google.com/store/apps/details?id=com.delightfuldev.make9&referrer=utm_source%3Dhomepage%26utm_medium%3Dwebsite%26anid%3Dadmob %}

@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Nori for Mac"
+subtitle: "Create Photo Strips. Easily and Quickly."
+date:   2015-12-24 12:32:24
+categories: mac
+permalink: "nori"
+device: "macbook"
+app_preview: "/images/nori/preview-nori.png"
+name: "Nori"
+tagline: "Photo strips creator for Mac"
+app_icon: "/images/nori/Nori.png"
+---
+
+
+
+{% img center | /images/nori/nori-on-mac.png | Nori for Mac %}
+
+{% textalign center %}
+Have you ever tried to show two images side by side for comparison? Maybe to compare two graphs showing simulation results. Or to compare multiple screenshots. Nori for Mac is designed to help you create photo strips quickly. Simply drag and drop images to Nori, or select multiple images in Finder and open Nori from the right click menu. Check out the video demo below to see it in action.
+{% endtextalign %}
+
+{% youtube nqs3FOgZ4tM %}
+
+{% section_title Features %}
+
+{% features %}
+Simply drag and drop images to Nori app.
+Create Photostrips directly from Finder. Right click on selected images -> Services -> Create Photostrip.
+Horizontal and vertical layout.
+Change background color.
+Change spacing between images.
+Reorder images just by dragging.
+Remove image from the strip.
+Drag and drop more images to add to the strip.
+{% endfeatures %}
+
+{% section_title Download %}
+
+{% download coming_soon %}

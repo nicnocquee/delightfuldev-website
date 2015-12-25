@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Kaomoji for Mac"
+subtitle: ""
+date:   2015-12-19 12:32:24
+categories: mac
+permalink: "http://www.kaomojiapp.com/"
+device: "macbook"
+app_preview: "/images/kaomoji/preview-kaomoji.png"
+name: "Kaomoji"
+tagline: "Quickly use hundreds of 顔文字"
+app_icon: "/images/kaomoji/Kaomoji.png"
+---

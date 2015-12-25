@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Tiny for Mac"
+subtitle: "OSX Screen Capture. Upgraded."
+date:   2015-12-21 12:32:24
+categories: mac
+permalink: "tiny"
+device: "macbook"
+app_preview: "/images/tiny/preview-tiny.png"
+name: "Tiny"
+tagline: "Make Your Screen Capture Smarter"
+app_icon: "/images/tiny/Tiny.png"
+---
+
+{% img center | /images/tiny/tiny-safari.png | Tiny for Mac %}
+
+{% textalign center %}
+Say goodbye to boring and uninformative screen shots names. Everytime you take screen shot of your Mac, Tiny will rename your screen shot into a meaningful file name. Tiny does not have a window. It lives in your Mac’s Menu Bar. Tiny renames your screen shot based on the front most application’s window. For Safari and Chrome, Tiny even renames the screen shot with the URL and title of the active tab. Tiny can also automatically open quick look after you take screen shot.
+{% endtextalign %}
+
+{% download direct | /assets/files/tiny/Tiny.zip | Download v1.0.6 (BETA) %}
+
+{% footnote %}
+- Installation: Simply download the zip and extract. Copy the Tiny.app to /Applications folder then double click to run.
+- Tiny.app doesn’t have a window. To Quit or change Preferences, click on the icon on your Mac Menu Bar.
+- Tiny is FREE. Instead of asking you to pay for my coffee while making this app, I ask you to donate to [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give) instead. Or help fund healthcare for patients around the world via [Watsi]("https://watsi.org). Or simply make someone's day.
+{% endfootnote %}

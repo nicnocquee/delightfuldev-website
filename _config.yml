@@ -1,33 +1,18 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-include: [CNAME, tiny]
-highlighter: pygments
-markdown: kramdown
-
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: DelightfulDev
-
-url: http://www.delightfuldev.com
-logo: "/assets/media/logo.png"
-cover: "/assets/media/delightfuldev-facebook-cover.png"
+# Site settings
 title: DelightfulDev
-description: Making Fun Apps
-twitter: delightfuldev
+name: DelightfulDev
 email: nico@delightfuldev.com
-author:
-  name: Nico Prananta
-  email: nico@delightfuldev.com
-  twitter: nicnocquee
-  bio: Making Apps
+description: "Making Fun Apps"
+info: "Made with &#x2764; by Nico Prananta from Kobe, Japan and Basel, Switzerland"
+message: "We make fun apps."
+keywords: "mac,apple,iphone,ios,osx,games,apps,development"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
+twitter_username: delightfuldev
+author: Nico Prananta
+# Build settings
+markdown: kramdown
+copyright: "&copy; 2014-2015 DelightfulDev by Nico Prananta"
 
-categories_path: categories.html
-tags_path: tags.html
-
-BASE_PATH:
+facebook:
+    image: /images/delightfuldev-facebook-cover.png

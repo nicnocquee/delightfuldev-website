@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Lovely for iPhone"
+subtitle: "Like Photos for iOS. But more."
+date:   2015-12-19 12:32:24
+categories: iphone
+permalink: "http://www.getlovelyapp.com"
+device: "iphone"
+app_preview: "/images/lovely/preview-lovely.png"
+name: "Lovely"
+tagline: "Photos app you deserve"
+app_icon: "/images/lovely/Lovely.png"
+---
