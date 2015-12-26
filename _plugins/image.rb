@@ -6,7 +6,7 @@ module Jekyll
       safe = true
       input = text.split("|")
       @alignment = input[0].strip
-      @alignmentClass = "content__item-img-" + input[0].strip
+      @alignmentClass = "content__item-img-" + input[0].strip + " animated zoomIn"
       @src = input[1].strip
       @alt = input[2].strip
     end
