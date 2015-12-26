@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="slider">
+<section class="slider" id="main_slider">
     {% for post in site.posts %}
     <div class="slide" data-content="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.permalink }}{% endif %}">
         <div class="slide__mover">

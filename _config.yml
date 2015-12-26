@@ -9,10 +9,15 @@ keywords: "mac,apple,iphone,ios,osx,games,apps,development"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
 twitter_username: delightfuldev
-author: Nico Prananta
 # Build settings
 markdown: kramdown
 copyright: "&copy; 2014-2015 DelightfulDev by Nico Prananta"
-
+author:
+    name: Nico Prananta
+    twitter: nicnocquee
+    url: http://www.nicnocquee.com
+    avatar: /images/nico.jpg
+    email: nico@delightfuldev.com
+    description: "I've been making iOS apps since 2010. My recent apps were written in Swift. I also have experience with Cocos2d-x. On the server side, I like using Laravel PHP. If you're looking for someone to make an iOS app, let's get in touch."
 facebook:
     image: /images/delightfuldev-facebook-cover.png

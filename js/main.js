@@ -70,7 +70,13 @@
 		infoButton = document.querySelector('.bp-icon-about'),
 		hoverInfo = document.querySelector('#site-info-button'),
 		siteInfo = document.querySelector('#site-info'),
-		hoverInfoText = hoverInfo.getAttribute('data-content');
+		hoverInfoText = hoverInfo.getAttribute('data-content'),
+		hireMeButton = document.querySelector("#hire_me_button"),
+		profileSection = document.querySelector(".profile"),
+		profileCard = document.querySelector("#profile_card"),
+		isShowingProfile = false,
+		initialProfileCardClass = profileCard.className,
+		mainSlider = document.querySelector("#main_slider");
 
 	// some helper functions:
 	function scrollX() { return window.pageXOffset || docElem.scrollLeft; }
@@ -114,6 +120,31 @@
 			infoButton.addEventListener('click', function() {
 				if (siteInfo.style.display == 'block') {siteInfo.style.display = 'none';}
 				else {siteInfo.style.display = 'block';}
+			});
+		}
+
+		if (hireMeButton) {
+			hireMeButton.addEventListener('click', function(){
+				profileCard.className = initialProfileCardClass;
+				if (!isShowingProfile) {
+					isShowingProfile = true;
+					profileCard.style.opacity = 1;
+					profileCard.className = profileCard.className + " animated bounceInDown";
+					mainSlider.style.opacity = 0.1;
+				} else {
+					isShowingProfile = false;
+					profileCard.className = profileCard.className + " animated bounceOutUp";
+					mainSlider.style.opacity = 1;
+				}
+
+			});
+
+			profileSection.addEventListener('click', function() {
+				if (isShowingProfile) {
+					isShowingProfile = false;
+					profileCard.className = profileCard.className + " animated bounceOutUp";
+					mainSlider.style.opacity = 1;
+				}
 			});
 		}
 
@@ -186,6 +217,7 @@
 	// opens one item
 	function openItem(item) {
 		if( isOpen ) return;
+		if (isShowingProfile) return;
 
 		var permalink = item.getAttribute('data-content');
 		if (permalink.indexOf('http') == 0) {
@@ -299,6 +331,7 @@
 
 	// navigate the slider
 	function navigate(dir) {
+		if (isShowingProfile) return;
 		var itemCurrent = items[current],
 			currentEl = itemCurrent.querySelector('.slide__mover'),
 			currentTitleEl = itemCurrent.querySelector('.slide__title');
