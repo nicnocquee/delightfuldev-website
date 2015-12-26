@@ -300,8 +300,8 @@ body {
 }
 
 .content__item--current .content__item-img {
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
+	-webkit-transform: translate3d(0px,0,0);
+	transform: translate3d(0px,0,0);
 }
 
 .content__item-inner {
