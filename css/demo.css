@@ -236,6 +236,11 @@ a:hover {
 	content: '\e004';
 }
 
+.bp-icon-child:after {
+	content: '\e811';
+}
+
+
 .content__item-inner h2,h3{
 	text-align: center;
 }
