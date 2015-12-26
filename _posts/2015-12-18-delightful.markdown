@@ -4,7 +4,7 @@ title:  "Delightful for iPhone"
 subtitle: "Trovebox Client. Open source and Free."
 date:   2015-12-19 12:32:24
 categories: iphone
-permalink: "http://www.getdelightfulapp.com/"
+external_url: "http://www.getdelightfulapp.com/"
 device: "iphone"
 app_preview: "/images/delightful/preview-delightful.png"
 name: "Delightful"

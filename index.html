@@ -4,7 +4,7 @@ layout: default
 
 <section class="slider">
     {% for post in site.posts %}
-    <div class="slide" data-content="{{ post.permalink }}">
+    <div class="slide" data-content="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.permalink }}{% endif %}">
         <div class="slide__mover">
             <div class="zoomer flex-center">
                 <img class="zoomer__image" src="/images/{{ post.device }}.png" alt="{{ post.device }}" />

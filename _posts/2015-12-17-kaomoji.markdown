@@ -4,7 +4,7 @@ title:  "Kaomoji for Mac"
 subtitle: ""
 date:   2015-12-19 12:32:24
 categories: mac
-permalink: "http://www.kaomojiapp.com/"
+external_url: "http://www.kaomojiapp.com/"
 device: "macbook"
 app_preview: "/images/kaomoji/preview-kaomoji.png"
 name: "Kaomoji"
