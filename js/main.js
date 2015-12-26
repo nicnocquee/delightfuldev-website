@@ -72,6 +72,7 @@
 		siteInfo = document.querySelector('#site-info'),
 		hoverInfoText = hoverInfo.getAttribute('data-content'),
 		hireMeButton = document.querySelector("#hire_me_button"),
+		initialHireMeButtonClass = hireMeButton.className,
 		profileSection = document.querySelector(".profile"),
 		profileCard = document.querySelector("#profile_card"),
 		isShowingProfile = false,
@@ -394,6 +395,11 @@
 			window.history.replaceState(null, '', '/');
 		}
 
+		if (current % 2 == 0) {
+			hireMeButton.className = hireMeButton.className + " animated rubberBand";
+		} else {
+			hireMeButton.className = initialHireMeButtonClass;
+		}
 	}
 
 	function getHashValue(key) {
