@@ -130,10 +130,12 @@
 				if (!isShowingProfile) {
 					isShowingProfile = true;
 					profileCard.style.opacity = 1;
+					profileCard.style.zIndex = 1000;
 					profileCard.className = profileCard.className + " animated bounceInDown";
 					mainSlider.style.opacity = 0.1;
 				} else {
 					isShowingProfile = false;
+					profileCard.style.zIndex = 0;
 					profileCard.className = profileCard.className + " animated bounceOutUp";
 					mainSlider.style.opacity = 1;
 				}
