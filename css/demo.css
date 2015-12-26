@@ -449,7 +449,9 @@ a.centerbutton {
 		margin-top: 30px;
 	}
 
-
+	.slider__nav  {
+		position: absolute;
+	}
 }
 
 @media screen and (max-width: 20em) {

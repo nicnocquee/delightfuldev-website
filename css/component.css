@@ -19,7 +19,7 @@ body {
 }
 
 .slider {
-	position: relative;
+	position: absolute;
 	z-index: 200;
 	width: 100%;
 	margin: 0 auto;
@@ -70,7 +70,7 @@ body {
 }
 
 .slider__nav {
-	position: absolute;
+	position: fixed;
 	bottom: 2em;
 	width: 100%;
 	text-align: center;
