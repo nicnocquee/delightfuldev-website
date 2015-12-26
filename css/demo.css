@@ -119,7 +119,7 @@ a:hover {
 	cursor: help;
 }
 
-.bp-header > span span:hover:before {
+#site-info-button:hover:before{
 	content: attr(data-content);
 	font-size: 110%;
 	font-weight: 700;
@@ -135,6 +135,10 @@ a:hover {
 	text-transform: none;
 	color: #fff;
 	background: #5C5EDC;
+}
+
+#site-info {
+	display: none;
 }
 
 .bp-header nav {
@@ -395,8 +399,8 @@ a.centerbutton {
 	.bp-header > span {
 		text-indent: 30px;
 	}
-	.bp-header > span span:hover:before {
-		right: 0px;
+	#site-info-button:hover:before{
+		display: none;
 	}
 	.bp-header h1 {
 		font-size: 1.8em;
@@ -414,6 +418,22 @@ a.centerbutton {
 	#coming_soon {
 		width: 50%;
 		margin-top: 30px;
+	}
+
+	#site-info {
+		font-size: 110%;
+		font-weight: 700;
+		line-height: 1.2;
+		max-width: 500px;
+		margin-left: 4px;
+		padding: .8em 1em;
+		margin-bottom: 10px;
+		text-align: center;
+		text-indent: 0;
+		letter-spacing: 0;
+		color: #fff;
+		background: #5C5EDC;
+		display: none;
 	}
 }
 

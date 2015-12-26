@@ -1,5 +1,6 @@
 <header class="bp-header cf">
-	<span>{{ site.title }} <span class="bp-icon bp-icon-about" data-content="{{ site.info }}"></span></span>
+	<span>{{ site.title }} <span class="bp-icon bp-icon-about" id="site-info-button"  data-content="{{ site.info }}"></span></span>
+	<div id="site-info">{{ site.info }}</div>
 	<h1>{{ site.message }}</h1>
 	<nav>
 		<a href="{{ site.twitter_username | prepend: "https://twitter.com/" }}" class="bp-icon bp-icon-twitter" data-info="@{{ site.twitter_username }}" target="_blank"><span>@{{ site.twitter_username }}</span></a>
