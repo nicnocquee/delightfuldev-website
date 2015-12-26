@@ -10,6 +10,9 @@ app_preview: "/images/meeru/preview-meeru.png"
 name: "Meeru"
 tagline: "Watch multiple videos simultaneously"
 app_icon: "/images/meeru/Meeru.png"
+facebook:
+    image: "/images/meeru/fb.png"
+
 ---
 
 

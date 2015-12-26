@@ -10,6 +10,8 @@ app_preview: "/images/tiny/preview-tiny.png"
 name: "Tiny"
 tagline: "Make Your Screen Capture Smarter"
 app_icon: "/images/tiny/Tiny.png"
+facebook:
+    image: "/images/tiny/fb.png"
 ---
 
 {% img center | /images/tiny/tiny-safari.png | Tiny for Mac %}

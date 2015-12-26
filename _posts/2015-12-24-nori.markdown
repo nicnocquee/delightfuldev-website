@@ -10,6 +10,8 @@ app_preview: "/images/nori/preview-nori.png"
 name: "Nori"
 tagline: "Photo strips creator for Mac"
 app_icon: "/images/nori/Nori.png"
+facebook:
+    image: "/images/nori/fb.jpg"
 ---
 
 

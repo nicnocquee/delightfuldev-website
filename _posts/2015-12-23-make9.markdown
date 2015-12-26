@@ -10,6 +10,8 @@ app_preview: "/images/make9/preview-make9.png"
 name: "Make9"
 tagline: "Number Puzzle Game for iOS and Android"
 app_icon: "/images/make9/Make9.png"
+facebook:
+    image: "/images/make9/fb.png"
 ---
 
 
