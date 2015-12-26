@@ -418,6 +418,16 @@ a.centerbutton {
 	}
 }
 
+@media screen and (min-height: 800px) and (min-width: 800px)  {
+	.slider {
+		padding: 4% 0 10%;
+	}
+
+	.slide {
+		top: 10%;
+	}
+}
+
 @media screen and (max-width: 40em) {
 	.bp-header {
 		text-align: center;
