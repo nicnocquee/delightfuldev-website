@@ -124,28 +124,40 @@
 		}
 
 		if (hireMeButton) {
+			profileCard.addEventListener('animationend', function() {
+				classie.remove(profileCard, 'animated');
+				if (isShowingProfile) {
+					console.log('did show profile');
+					classie.remove(profileCard, 'zoomIn');
+					profileCard.style.opacity = 1;
+					profileCard.style.zIndex = 1000;
+				} else {
+					console.log('did hide profile');
+					classie.remove(profileCard, 'bounceOutUp');
+					profileCard.style.opacity = 0;
+					profileCard.style.zIndex = 0;
+					mainSlider.style.opacity = 1;
+
+				}
+			});
+
 			hireMeButton.addEventListener('click', function(){
-				profileCard.className = initialProfileCardClass;
 				if (!isShowingProfile) {
 					isShowingProfile = true;
 					profileCard.style.opacity = 1;
 					profileCard.style.zIndex = 1000;
-					profileCard.className = profileCard.className + " animated bounceInDown";
+
+					classie.add(profileCard, 'animated');
+					classie.add(profileCard, 'zoomIn');
 					mainSlider.style.opacity = 0.1;
 				} else {
-					isShowingProfile = false;
-					profileCard.style.zIndex = 0;
-					profileCard.className = profileCard.className + " animated bounceOutUp";
-					mainSlider.style.opacity = 1;
+					closeProfileCard();
 				}
-
 			});
 
 			profileSection.addEventListener('click', function() {
 				if (isShowingProfile) {
-					isShowingProfile = false;
-					profileCard.className = profileCard.className + " animated bounceOutUp";
-					mainSlider.style.opacity = 1;
+					closeProfileCard();
 				}
 			});
 		}
@@ -214,6 +226,12 @@
 					break;
 			}
 		} );
+	}
+
+	function closeProfileCard () {
+		isShowingProfile = false;
+		classie.add(profileCard, 'animated');
+		classie.add(profileCard, 'bounceOutUp');
 	}
 
 	// opens one item
