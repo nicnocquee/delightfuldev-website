@@ -291,8 +291,8 @@ body {
 	display: block;
 	max-width: 80px;
 	max-height: 80vh;
-	-webkit-transform: translate3d(-120%,0,0);
-	transform: translate3d(-120%,0,0);
+	-webkit-transform: translate3d(0,-120%,0);
+	transform: translate3d(0,-120%,0);
 	-webkit-flex: none;
 	-ms-flex: none;
 	flex: none;
