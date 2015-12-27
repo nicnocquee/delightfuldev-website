@@ -192,7 +192,7 @@ body {
 
 .preview {
 	overflow: hidden;
-	background: #18191b;
+	background: rgba(0, 0, 0, 0);;
 }
 
 .preview img {
