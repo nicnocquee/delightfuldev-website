@@ -241,6 +241,8 @@
 		// also scale the body so it looks the camera moves to the item.
 		if( bodyScale ) {
 			dynamics.animate(bodyEl, { scale: bodyScale, opacity: 0 }, { type: dynamics.easeInOut, duration: 500 });
+		} else if (isFirefox) {
+			dynamics.animate(bodyEl, { opacity: 0 }, { type: dynamics.easeInOut, duration: 500 });
 		}
 		// after the transition is finished:
 		onEndTransition(zoomer, function() {
