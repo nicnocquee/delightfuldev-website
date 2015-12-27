@@ -236,10 +236,6 @@
 		// disallow scroll
 		scrollContainer.addEventListener('scroll', noscroll);
 
-
-
-
-
 		// apply transforms
 		applyTransforms(zoomer);
 		// also scale the body so it looks the camera moves to the item.
@@ -248,7 +244,6 @@
 		}
 		// after the transition is finished:
 		onEndTransition(zoomer, function() {
-
 			if (isSafari()) {
 				setTimeout(function() {
 					if( bodyScale ) {
@@ -332,7 +327,7 @@
 		}
 
 		// apply transform
-		var trans = 'translate3d(' + Number(win.width/2 - (zoomerOffset.left+zoomerAreaSize.width/2)) + 'px,' + Number(win.height/2 - (zoomerOffset.top+zoomerAreaSize.height/2)) + 'px,0) scale3d(' + scaleVal + ',' + scaleVal + ',1)';
+		var trans = 'scale3d(' + scaleVal + ',' + scaleVal + ',1)';
 		el.style.WebkitTransform = trans;
 		el.style.transform = trans;
 	}
