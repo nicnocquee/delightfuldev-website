@@ -53,7 +53,6 @@
 			zoomCtrl = sliderEl.querySelector('.button--zoom');
 		}
 
-		// navigation controls/arrows
 
 		// the main content element
 		var contentEl = document.querySelector('.content'),
@@ -236,11 +235,16 @@
 		classie.add(zoomer, 'zoomer--active');
 		// disallow scroll
 		scrollContainer.addEventListener('scroll', noscroll);
+
+
+
+
+
 		// apply transforms
 		applyTransforms(zoomer);
 		// also scale the body so it looks the camera moves to the item.
 		if( bodyScale ) {
-			dynamics.animate(bodyEl, { scale: bodyScale }, { type: dynamics.easeInOut, duration: 500 });
+			dynamics.animate(bodyEl, { scale: bodyScale, opacity: 0 }, { type: dynamics.easeInOut, duration: 500 });
 		}
 		// after the transition is finished:
 		onEndTransition(zoomer, function() {
@@ -249,7 +253,7 @@
 				setTimeout(function() {
 					if( bodyScale ) {
 						dynamics.stop(bodyEl);
-						dynamics.css(bodyEl, { scale: 1 });
+						dynamics.css(bodyEl, { scale: 1, opacity: 1 });
 
 						// fix for safari (allowing fixed children to keep position)
 						bodyEl.style.WebkitTransform = '';
@@ -328,8 +332,9 @@
 		}
 
 		// apply transform
-		el.style.WebkitTransform = 'translate3d(' + Number(win.width/2 - (zoomerOffset.left+zoomerAreaSize.width/2)) + 'px,' + Number(win.height/2 - (zoomerOffset.top+zoomerAreaSize.height/2)) + 'px,0) scale3d(' + scaleVal + ',' + scaleVal + ',1)';
-		el.style.transform = 'translate3d(' + Number(win.width/2 - (zoomerOffset.left+zoomerAreaSize.width/2)) + 'px,' + Number(win.height/2 - (zoomerOffset.top+zoomerAreaSize.height/2)) + 'px,0) scale3d(' + scaleVal + ',' + scaleVal + ',1)';
+		var trans = 'translate3d(' + Number(win.width/2 - (zoomerOffset.left+zoomerAreaSize.width/2)) + 'px,' + Number(win.height/2 - (zoomerOffset.top+zoomerAreaSize.height/2)) + 'px,0) scale3d(' + scaleVal + ',' + scaleVal + ',1)';
+		el.style.WebkitTransform = trans;
+		el.style.transform = trans;
 	}
 
 	// navigate the slider
