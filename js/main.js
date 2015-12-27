@@ -78,6 +78,23 @@
 		initialProfileCardClass = profileCard.className,
 		mainSlider = document.querySelector("#main_slider");
 
+		var hammertime = new Hammer(scrollContainer);
+		hammertime.on('swipe', function(ev) {
+			if (!isOpen && !isShowingProfile) {
+				if (ev.direction == Hammer.DIRECTION_RIGHT) {
+					navigate('left');
+				} else {
+					navigate('right');
+				}
+			}
+		});
+		hammertime.get('pinch').set({ enable: false });
+		hammertime.get('rotate').set({ enable: false });
+		hammertime.get('tap').set({ enable: false });
+		hammertime.get('doubletap').set({ enable: false });
+		hammertime.get('press').set({ enable: false });
+		hammertime.get('pan').set({ enable: false });
+
 	// some helper functions:
 	function scrollX() { return window.pageXOffset || docElem.scrollLeft; }
 	function scrollY() { return window.pageYOffset || docElem.scrollTop; }
