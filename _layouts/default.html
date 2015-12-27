@@ -21,7 +21,7 @@
                       <div class="title">
                           <a target="_blank" href="{{ site.author.url }}">{{ site.author.name }}</a>
                       </div>
-                      <div class="desc">{{ site.author.description }}</div>
+                      <div class="desc">{% markdown %}{% include profile_description.markdown %}{% endmarkdown %}</div>
                   </div>
                   <div class="bottom">
                       <a class="btn btn-primary btn-twitter btn-sm" href="mailto:{{ site.author.email }}">

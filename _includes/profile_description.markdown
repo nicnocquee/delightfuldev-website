@@ -1,0 +1,1 @@
+I've been making iOS apps since 2010. My recent apps were written in Swift. I also have [experience with Cocos2d-x](make9). On the server side, I like using Laravel PHP. If you're looking for someone to make an iOS/OSX app, let's get in touch.
