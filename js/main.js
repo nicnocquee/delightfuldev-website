@@ -276,6 +276,12 @@
 
 		var contentItem = contentEl.querySelector('.content__item--current');
 
+		var appIcon = document.querySelector('#app-icon');
+		if (appIcon) {
+			classie.remove(appIcon, 'animated');
+			classie.remove(appIcon, 'bounceInDown');
+		}
+
 		classie.remove(contentEl, 'content--open');
 		classie.remove(contentItem, 'content__item--current');
 		classie.remove(bodyEl, 'noscroll');
