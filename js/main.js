@@ -144,16 +144,18 @@
 			profileCard.addEventListener('animationend', function() {
 				classie.remove(profileCard, 'animated');
 				if (isShowingProfile) {
-					console.log('did show profile');
 					classie.remove(profileCard, 'zoomIn');
 					profileCard.style.opacity = 1;
 					profileCard.style.zIndex = 1000;
+					var closeProfileButton = document.querySelector('#close_profile');
+					closeProfileButton.style.opacity = 1;
 				} else {
-					console.log('did hide profile');
 					classie.remove(profileCard, 'bounceOutUp');
 					profileCard.style.opacity = 0;
 					profileCard.style.zIndex = 0;
 					mainSlider.style.opacity = 1;
+					var closeProfileButton = document.querySelector('#close_profile');
+					closeProfileButton.style.opacity = 0;
 
 				}
 			});

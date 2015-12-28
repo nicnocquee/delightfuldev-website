@@ -240,6 +240,21 @@ a:hover {
 	content: '\e811';
 }
 
+.bp-icon-close:after {
+	content: '\e80e';
+}
+
+#close_profile {
+	position: absolute;
+	right: -13px;
+	top: -10px;
+	font-size: 30px;
+	opacity: 0;
+}
+
+#close_profile:after {
+	color: white;
+}
 
 .content__item-inner h2,h3{
 	text-align: center;
@@ -705,9 +720,7 @@ a.centerbutton {
 }
 
 .card.hovercard {
-    position: relative;
-    padding-top: 0;
-    overflow: hidden;
+	padding-top: 0;
     text-align: center;
     background-color: white;
 }
