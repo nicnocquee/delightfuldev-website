@@ -11,7 +11,6 @@ url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
 twitter_username: delightfuldev
 # Build settings
 markdown: kramdown
-copyright: "&copy; 2014-2015 DelightfulDev by Nico Prananta"
 author:
     name: Nico Prananta
     twitter: nicnocquee

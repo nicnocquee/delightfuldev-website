@@ -12,7 +12,7 @@ layout: default
             {{ content }}
 
 			<div class="footer">
-				{{ site.copyright }}
+				{% markdown %}{% include copyright.md %}{% endmarkdown %}
 			</div>
 		</div>
 	</div>
