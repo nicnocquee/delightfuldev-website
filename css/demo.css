@@ -384,7 +384,6 @@ a:hover {
 	margin-top: 30px;
 }
 
-
 a.centerbutton {
 	border-style: solid;
 	padding: 10px;
@@ -445,16 +444,6 @@ a.centerbutton {
 	}
 }
 
-@media screen and (min-height: 800px) and (min-width: 800px)  {
-	.slider {
-		padding: 4% 0 10%;
-	}
-
-	.slide {
-		top: 10%;
-	}
-}
-
 @media screen and (max-width: 40em) {
 	.bp-header {
 		text-align: center;
@@ -497,6 +486,7 @@ a.centerbutton {
 	.slider__nav  {
 		position: relative;
 		padding-top: 10px;
+		padding-bottom: 20px;
 		margin-bottom: 10px;
 		margin-top: 20px;
 		bottom: 0;
@@ -526,13 +516,17 @@ a.centerbutton {
 }
 
 .profile {
-	z-index: 10000;
+	z-index: 0;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-	visibility: 'hidden';
+	visibility: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
 }
 
 #profile_card_parent {

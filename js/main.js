@@ -149,6 +149,8 @@
 					profileCard.style.zIndex = 1000;
 					var closeProfileButton = document.querySelector('#close_profile');
 					closeProfileButton.style.visibility = 'visible';
+					profileSection.style.zIndex = 1000;
+					profileSection.style.visibility = 'visible';
 				} else {
 					classie.remove(profileCard, 'bounceOutUp');
 					profileCard.style.visibility = 'hidden';
@@ -157,8 +159,10 @@
 					var closeProfileButton = document.querySelector('#close_profile');
 					closeProfileButton.style.visibility = 'hidden';
 					var profileCardParent = document.querySelector('#profile_card_parent');
-					profileCardParent.style.visibility = 'hiden';
+					profileCardParent.style.visibility = 'hidden';
 					profileCardParent.style.zIndex = 0;
+					profileSection.style.zIndex = 0;
+					profileSection.style.visibility = 'hidden';
 				}
 			});
 
@@ -170,6 +174,8 @@
 					profileCard.style.visibility = 'visible';
 					profileCard.style.zIndex = 1000;
 					profileCardParent.style.zIndex = 1000;
+					profileSection.style.zIndex = 1000;
+					profileSection.style.visibility = 'visible';
 
 					classie.add(profileCard, 'animated');
 					classie.add(profileCard, 'bounceIn');
