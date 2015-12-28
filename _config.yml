@@ -4,7 +4,7 @@ name: DelightfulDev
 email: nico@delightfuldev.com
 description: "Making Nice Apps"
 info: "Made with &#x2764; by Nico Prananta from Kobe, Japan and Basel, Switzerland"
-message: "Making fun apps."
+message: "Making nice apps."
 keywords: "mac,apple,iphone,ios,osx,games,apps,development"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
