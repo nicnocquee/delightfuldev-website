@@ -539,6 +539,12 @@ a.centerbutton {
 	visibility: hidden;
 }
 
+#profile_card.card.hovercard {
+	-webkit-animation-duration: 0.9s;
+	-moz-animation-duration: 0.9s;
+	animation-duration: 0.9s;
+}
+
 .card {
 	visibility: 'hidden';
 	width: 280px;

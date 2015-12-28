@@ -144,12 +144,11 @@
 			profileCard.addEventListener('animationend', function() {
 				classie.remove(profileCard, 'animated');
 				if (isShowingProfile) {
-					classie.remove(profileCard, 'zoomIn');
+					classie.remove(profileCard, 'bounceIn');
 					profileCard.style.visibility = 'visible';
 					profileCard.style.zIndex = 1000;
 					var closeProfileButton = document.querySelector('#close_profile');
 					closeProfileButton.style.visibility = 'visible';
-					profileCardParent.style.zIndex = 1000;
 				} else {
 					classie.remove(profileCard, 'bounceOutUp');
 					profileCard.style.visibility = 'hidden';
@@ -173,7 +172,7 @@
 					profileCardParent.style.zIndex = 1000;
 
 					classie.add(profileCard, 'animated');
-					classie.add(profileCard, 'zoomIn');
+					classie.add(profileCard, 'bounceIn');
 					mainSlider.style.opacity = 0.1;
 				} else {
 					closeProfileCard();
