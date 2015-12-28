@@ -249,7 +249,7 @@ a:hover {
 	right: -13px;
 	top: -20px;
 	font-size: 30px;
-	opacity: 0;
+	opacity: 1;
 }
 
 #close_profile:after {
@@ -525,10 +525,15 @@ a.centerbutton {
 	align-content: center;
 	align-items: center;
 	justify-content: center;
+	visibility: 'hidden';
+}
+
+#profile_card_parent {
+	visibility: hidden;
 }
 
 .card {
-	opacity: 0;
+	visibility: 'hidden';
 	width: 280px;
 	z-index: 0;
     padding-top: 20px;

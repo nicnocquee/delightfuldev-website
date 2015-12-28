@@ -145,26 +145,32 @@
 				classie.remove(profileCard, 'animated');
 				if (isShowingProfile) {
 					classie.remove(profileCard, 'zoomIn');
-					profileCard.style.opacity = 1;
+					profileCard.style.visibility = 'visible';
 					profileCard.style.zIndex = 1000;
 					var closeProfileButton = document.querySelector('#close_profile');
-					closeProfileButton.style.opacity = 1;
+					closeProfileButton.style.visibility = 'visible';
+					profileCardParent.style.zIndex = 1000;
 				} else {
 					classie.remove(profileCard, 'bounceOutUp');
-					profileCard.style.opacity = 0;
+					profileCard.style.visibility = 'hidden';
 					profileCard.style.zIndex = 0;
 					mainSlider.style.opacity = 1;
 					var closeProfileButton = document.querySelector('#close_profile');
-					closeProfileButton.style.opacity = 0;
-
+					closeProfileButton.style.visibility = 'hidden';
+					var profileCardParent = document.querySelector('#profile_card_parent');
+					profileCardParent.style.visibility = 'hiden';
+					profileCardParent.style.zIndex = 0;
 				}
 			});
 
 			hireMeButton.addEventListener('click', function(){
 				if (!isShowingProfile) {
 					isShowingProfile = true;
-					profileCard.style.opacity = 1;
+					var profileCardParent = document.querySelector('#profile_card_parent');
+					profileCardParent.style.visibility = 'visible';
+					profileCard.style.visibility = 'visible';
 					profileCard.style.zIndex = 1000;
+					profileCardParent.style.zIndex = 1000;
 
 					classie.add(profileCard, 'animated');
 					classie.add(profileCard, 'zoomIn');
