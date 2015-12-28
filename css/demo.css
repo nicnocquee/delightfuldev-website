@@ -247,7 +247,7 @@ a:hover {
 #close_profile {
 	position: absolute;
 	right: -13px;
-	top: -10px;
+	top: -20px;
 	font-size: 30px;
 	opacity: 0;
 }
@@ -532,7 +532,7 @@ a.centerbutton {
 	width: 280px;
 	z-index: 0;
     padding-top: 20px;
-    margin: 10px 0 20px 0;
+    margin: 0px 0 20px 0;
     background-color: rgba(214, 224, 226, 0.2);
     border-top-width: 0;
     border-bottom-width: 2px;
@@ -770,9 +770,8 @@ a.centerbutton {
 }
 
 .card.hovercard .bottom {
-    padding: 0 20px;
-    margin-bottom: 25px;
-	margin-top: 25px;
+    padding-bottom: 30px;
+	padding-top: 10px;
 }
 
 .btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
