@@ -2,7 +2,7 @@
 layout: default
 ---
 <div style="width: 100%; flex: 1; position: relative;">
-    <div style="display: flex; flex-direction: column; height: 90%; width: 100%; position: absolute; justify-content: center;">
+    <div style="display: flex; flex-direction: column; height: 88%; width: 100%; position: absolute; justify-content: center;">
         <section class="slider" id="main_slider">
             {% for post in site.posts %}
             <div class="slide" data-content="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.permalink }}{% endif %}">
