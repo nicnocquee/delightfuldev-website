@@ -40,6 +40,19 @@
 		scrollContainer = document.querySelector('.container'),
 		// the main slider and its items
 		sliderEl = document.querySelector('.slider');
+		var qs = (function(a) {
+		    if (a == "") return {};
+		    var b = {};
+		    for (var i = 0; i < a.length; ++i)
+		    {
+		        var p=a[i].split('=', 2);
+		        if (p.length == 1)
+		            b[p[0]] = "";
+		        else
+		            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+		    }
+		    return b;
+		})(window.location.search.substr(1).split('&'));
 		var items;
 		var itemsTotal;
 		var navRightCtrl;
@@ -315,7 +328,7 @@
 
 			isOpen = false;
 
-			window.location = '/'+item.getAttribute('data-content');
+			window.location = '/'+item.getAttribute('data-content')+'?fr='+current;
 
 			return;
 		});
@@ -323,7 +336,6 @@
 
 	// closes the item/content
 	function closeContent() {
-
 		var contentItem = contentEl.querySelector('.content__item--current');
 
 		var appIcon = document.querySelector('#app-icon');
@@ -354,7 +366,12 @@
 			// reset scrolling permission
 			lockScroll = false;
 			scrollContainer.removeEventListener('scroll', noscroll);
-			window.history.back();
+
+			if (qs["fr"] > 0) {
+				window.history.back();
+			} else {
+				window.location = '/';
+			}
 		});
 	}
 
