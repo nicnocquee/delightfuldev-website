@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Appolo"
+subtitle: "Showcase your apps. With style."
+description: "Responsive Jekyll Themes for Apps Portfolio"
+date:   2015-12-26 09:32:24
+categories: web
+permalink: "appolo"
+device: "macbook"
+name: "Appolo"
+tagline: "Open Source App Portfolio for App developers"
+---
+
+
+{% img center | /images/appolo/appolo-on-devices.png | Appolo for Jekyll %}
+
+{% textalign center %}
+Introducing Appolo, a set of plugins and themes for [Jekyll](http://jekyllrb.com) to create a static portfolio website for app developers to showcase their work. Its minimalistic theme and playful animations make it perfect to display the amazing apps you have made. The responsive design looks delightful in desktop or mobile. It also comes with a set of plugins to remove the hassle of formatting your apps' pages. As a matter of fact, this website is using Appolo 😎.
+{% endtextalign %}
+
+{% section_title Features %}
+
+{% features %}
+Responsive design. It looks good on the Mac, iPhone, and iPad.
+Profile card. Tell about yourself briefly to potential employers or clients.
+Use Markdown to write the app's page.
+FREE and Open Source.
+{% endfeatures %}
+
+{% section_title Download %}
+
+{% download direct | https://github.com/nicnocquee/appolo | Appolo on Github %}

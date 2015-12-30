@@ -5,7 +5,11 @@ layout: default
 <section class="content content--open">
 	<div class="content__item content__item--current content__item--reset">
 		<div class="content__item-inner">
-			<img class="content__item-img animated bounceInDown" src="{{ page.app_icon | prepend: site.baseurl }}" alt="{{ page.title }}" id="app-icon" />
+			{% assign app_icon = '/images/' | append: page.name | downcase | append: '/icon.png' %}
+			{% if page.app_icon %}
+				{% assign app_icon = page.app_icon %}
+			{% endif %}
+			<img class="content__item-img animated bounceInDown" src="{{ app_icon | prepend: site.baseurl }}" alt="{{ page.title }}" id="app-icon" />
 			<h2>{{ page.title }}</h2>
 			<h3>{{ page.subtitle }}</h3>
 

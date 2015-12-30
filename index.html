@@ -10,7 +10,11 @@ layout: default
                     <div class="zoomer flex-center">
                         <img class="zoomer__image" src="/images/{{ post.device }}.png" alt="{{ post.device }}" />
                         <div class="preview">
-                            <img src="{{ post.app_preview }}" alt="{{ post.name }}" />
+                            {% assign app_preview = '/images/' | append: post.name | downcase | append: '/preview.png'  %}
+                            {% if post.app_preview %}
+                                {% assign app_preview = post.app_preview %}
+                            {% endif %}
+                            <img src="{{ app_preview }}" alt="{{ post.name }}" />
                             <div class="zoomer__area zoomer__area--size-5"></div>
                         </div>
                     </div>
