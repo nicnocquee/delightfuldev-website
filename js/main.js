@@ -307,6 +307,7 @@
 		// after the transition is finished:
 		onEndTransition(zoomer, function() {
 			if (isSafari()) {
+				profileSection.style.display = 'none';
 				setTimeout(function() {
 					if( bodyScale ) {
 						dynamics.stop(bodyEl);
@@ -321,6 +322,7 @@
 					classie.remove(zoomer, 'zoomer--active');
 					zoomer.style.WebkitTransform = 'none';
 					zoomer.style.transform = 'none';
+					profileSection.style.display = 'flex';
 				}, 25);
 			}
 
@@ -359,9 +361,6 @@
 
 		// wait for the inner content to finish the transition
 		onEndTransition(contentItem, function(ev) {
-
-			classie.remove(this, 'content__item--reset');
-
 			// reset scrolling permission
 			lockScroll = false;
 			scrollContainer.removeEventListener('scroll', noscroll);
