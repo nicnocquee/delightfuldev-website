@@ -82,14 +82,14 @@
 		infoButton = document.querySelector('.bp-icon-about'),
 		hoverInfo = document.querySelector('#site-info-button'),
 		siteInfo = document.querySelector('#site-info'),
-		hoverInfoText = hoverInfo.getAttribute('data-content'),
+		hoverInfoText = (hoverInfo)? hoverInfo.getAttribute('data-content') : null,
 		hireMeButton = document.querySelector("#hire_me_button"),
-		initialHireMeButtonClass = hireMeButton.className,
+		initialHireMeButtonClass = (hireMeButton) ? hireMeButton.className : null,
 		profileSection = document.querySelector(".profile"),
 		profileCard = document.querySelector("#profile_card"),
 		profileCardParent = document.querySelector('#profile_card_parent'),
 		isShowingProfile = false,
-		initialProfileCardClass = profileCard.className,
+		initialProfileCardClass = (profileCard)? profileCard.className : null,
 		mainSlider = document.querySelector("#main_slider");
 
 		var hammertime = new Hammer(scrollContainer);
@@ -155,7 +155,6 @@
 		}
 
 		if (hireMeButton) {
-
 			profileCardParent.addEventListener('animationend', function() {
 				classie.remove(profileCardParent, 'animated');
 				if (isShowingProfile) {
