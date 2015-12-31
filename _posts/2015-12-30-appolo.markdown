@@ -18,6 +18,10 @@ tagline: "Open Source App Portfolio for App developers"
 Introducing Appolo, a set of plugins and themes for [Jekyll](http://jekyllrb.com) to create a static portfolio website for app developers to showcase their work. Its minimalistic theme and playful animations make it perfect to display the amazing apps you have made. The responsive design looks delightful in desktop or mobile. It also comes with a set of plugins to remove the hassle of formatting your apps' pages. As a matter of fact, this website is using Appolo 😎.
 {% endtextalign %}
 
+{% section_title Featured in Product Hunt %}
+
+{% img fill-width | /images/appolo/appolo-product-hunt.jpg | Appolo on Product Hunt %}
+
 {% section_title Features %}
 
 {% features %}
