@@ -43,4 +43,4 @@ Save the video lists to a .meeru file. Simply double click the .meeru file to re
 
 {% section_title Download %}
 
-{% img center | /images/app_store_coming_soon.png | Coming Soon %}
+{% download app_store | https://itunes.apple.com/jp/app/meeru-multiple-videos-at-same/id1069503013?l=en&mt=12 %}
