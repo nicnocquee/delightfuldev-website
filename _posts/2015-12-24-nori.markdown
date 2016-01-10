@@ -39,4 +39,4 @@ Drag and drop more images to add to the strip.
 
 {% section_title Download %}
 
-{% download coming_soon %}
+{% download app_store | https://itunes.apple.com/us/app/nori-photo-strips-creator/id1067017035?ls=1&mt=12 %}
