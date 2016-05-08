@@ -33,7 +33,7 @@ Clean and minimalistic design.
 Categories based on programming language of the gist.
 Create drafts before saving to Gist.
 Upload gist with images.
-and more ...
+and more to come ...
 {% endfeatures %}
 
 {% textalign center %}
@@ -42,7 +42,7 @@ and more ...
 <div id="mc_embed_signup">
 <form action="//delightfuldev.us7.list-manage.com/subscribe/post?u=33d4fb5ed2eb9afc624fceef4&amp;id=8b32b37d65" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">We are going to launch Kickstarter campaign with limited special rewards for early backers. <br/>If you tell me your e-mail address, we'll let you know immediately when the campaign starts. <br/>Don't miss it! ;)</label>
+	<label for="mce-EMAIL">We are going to launch a Kickstarter campaign to bring ProtonNote to completion.<br/>There will be limited special rewards for early backers.<br/>If you tell me your e-mail address, we'll let you know immediately when the campaign starts.<br/>Don't miss it! ;)</label>
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_33d4fb5ed2eb9afc624fceef4_8b32b37d65" tabindex="-1" value=""></div>
