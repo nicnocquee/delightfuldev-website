@@ -11,6 +11,8 @@ app_preview: "/images/protonnote/ProtonNote-preview.png"
 name: "ProtonNote"
 tagline: "Notebook for Developers"
 app_icon: "/images/protonnote/ProtonNote-icon.png"
+facebook:
+    image: "/images/protonnote/fb.jpg"
 ---
 
 
@@ -50,6 +52,9 @@ and more to come ...
     </div>
 </form>
 </div>
-
 <!--End mc_embed_signup-->
+{% endtextalign %}
+
+{% textalign center %}
+Please spread the word! Every [tweet](https://twitter.com/intent/tweet?text=ProtonNote%20for%20Mac%20seems%20interesting!&url=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote&via=delightfuldev) and [Facebook](https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote) post helps! :)
 {% endtextalign %}

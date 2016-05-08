@@ -19,16 +19,16 @@ facebook:
 {% img center | /images/burzt/burzt-iphone.png | Burzt for iPhone %}
 
 {% textalign center %}
-Burzt is a simple iPhone app convert burst photos to GIF. Tap the play button to see your burst photo animating. Change the duration. Share to Twitter, Email, or to your Mac via AirDrop. It’s that simple.
+Burzt is a simple iPhone app convert burst photos to GIF or video. Tap the play button to see your burst photo animating. Change the duration. Share to Twitter, Email, or to your Mac via AirDrop. It’s that simple.
 {% endtextalign %}
 
 {% section_title Features %}
 
 {% features %}
-Convert burst photos to GIF
-Create GIF from photos
+Convert burst photos to GIF or video
+Create GIF or video from photos
 Reverse GIF!
-Change the duration (speed) of the GIF
+Change the duration (speed) of the GIF or video
 Share via iOS share sheet
 {% endfeatures %}
 
