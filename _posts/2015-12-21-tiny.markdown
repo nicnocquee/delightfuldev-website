@@ -25,5 +25,5 @@ Say goodbye to boring and uninformative screen shots names. Everytime you take s
 {% footnote %}
 - Installation: Simply download the zip and extract. Copy the Tiny.app to /Applications folder then double click to run.
 - Tiny.app doesn’t have a window. To Quit or change Preferences, click on the icon on your Mac Menu Bar.
-- Tiny is FREE. Instead of asking you to pay for my coffee while making this app, I ask you to donate to [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give) instead. Or help fund healthcare for patients around the world via [Watsi]("https://watsi.org). Or simply make someone's day.
+- Tiny is FREE. Instead of asking you to pay for my coffee while making this app, I ask you to donate to [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give) instead. Or help fund healthcare for patients around the world via [Watsi](https://watsi.org). Or simply make someone's day.
 {% endfootnote %}
