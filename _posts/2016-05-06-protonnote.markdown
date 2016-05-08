@@ -57,7 +57,6 @@ and more to come ...
 
 {% textalign center %}
 Please spread the word! Every tweet and Facebook post helps! :)
-
 {% endtextalign %}
 
 {% textalign center %}
