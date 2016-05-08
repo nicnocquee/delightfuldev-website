@@ -5,8 +5,9 @@
 		<h1>{{ site.message }}</h1>
 		<nav>
 			<a class="bp-icon bp-icon-child" id="hire_me_button" data-info="Hire Me"><span>Hire Me</span></a>
-			<a href="{{ site.twitter_username | prepend: "https://twitter.com/" }}" class="bp-icon bp-icon-twitter" data-info="@{{ site.twitter_username }}" target="_blank"><span>@{{ site.twitter_username }}</span></a>
-			<a href="mailto:{{ site.email }}" class="bp-icon bp-icon-email" data-info="send me e-mail"><span>send me e-mail</span></a>
+			<a href="{{ site.twitter_username | prepend: "https://twitter.com/" }}" class="bp-icon bp-icon-twitter" data-info="Follow @{{ site.twitter_username }} for recent news" target="_blank"><span>@{{ site.twitter_username }}</span></a>
+			<a href="{{ site.facebook_page }}" class="bp-icon bp-icon-facebook" target="_blank" data-info="Like DelightfulDev Facebook page to get updates"><span>Facebook</span></a>
+			<a href="mailto:{{ site.email }}" class="bp-icon bp-icon-email" data-info="Send me e-mail"><span>Send me e-mail</span></a>
 		</nav>
 	{% endif %}
 </header>

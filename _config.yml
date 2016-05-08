@@ -9,6 +9,7 @@ keywords: "mac,apple,iphone,ios,osx,games,apps,development"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
 twitter_username: delightfuldev
+facebook_page: "https://www.facebook.com/delightfuldev/"
 # Build settings
 markdown: kramdown
 author:

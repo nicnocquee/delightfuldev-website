@@ -225,6 +225,10 @@ a:hover {
 	content: '\e800';
 }
 
+.bp-icon-facebook:after {
+	content: '\e814';
+}
+
 .bp-icon-heart:after {
 	content: '\e80b';
 }
