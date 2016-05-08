@@ -22,7 +22,10 @@ facebook:
 Have you ever tried to show two images side by side for comparison? Maybe to compare two graphs showing simulation results. Or to compare multiple screenshots. Nori for Mac is designed to help you create photo strips quickly. Simply drag and drop images to Nori, or select multiple images in Finder and open Nori from the right click menu. Check out the video demo below to see it in action.
 {% endtextalign %}
 
-{% youtube nqs3FOgZ4tM %}
+<div>
+<video src="/assets/media/nori/demo.mp4" controls width="100%" poster="/assets/media/nori/demo-poster.png">
+</video>
+</div>
 
 {% section_title Features %}
 
