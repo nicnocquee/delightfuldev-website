@@ -20,7 +20,7 @@ Introducing Appolo, a set of plugins and themes for [Jekyll](http://jekyllrb.com
 
 {% section_title Featured in Product Hunt %}
 
-{% img fill-width | /images/appolo/appolo-product-hunt.jpg | Appolo on Product Hunt %}
+{% img fill-width | /images/appolo/appolo-product-hunt.jpg | Appolo on Product Hunt | https://www.producthunt.com/tech/appolo %} 
 
 {% section_title Features %}
 
