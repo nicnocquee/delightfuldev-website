@@ -56,5 +56,10 @@ and more to come ...
 {% endtextalign %}
 
 {% textalign center %}
-Please spread the word! Every [tweet](https://twitter.com/intent/tweet?text=ProtonNote%20for%20Mac%20seems%20interesting!&url=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote&via=delightfuldev) and [Facebook](https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote) post helps! :)
+Please spread the word! Every tweet and Facebook post helps! :)
+
+{% endtextalign %}
+
+{% textalign center %}
+<a style="padding-right: 10px; width: 50%;" href="https://twitter.com/intent/tweet?text=ProtonNote%20for%20Mac%20seems%20interesting!&url=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote&via=delightfuldev" target="blank"><img src="/images/Twitter.png"></a><a style="width: 50%;" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.delightfuldev.com%2Fprotonnote" target="blank"><img src="/images/Facebook.png"></a>
 {% endtextalign %}
