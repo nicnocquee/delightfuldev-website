@@ -27,6 +27,9 @@ ProtonNote is a Mac app to store code snippets and programming notes powered by 
 <video src="/images/protonnote/protonnote.mp4" controls width="100%" poster="/images/protonnote/video-poster.png">
 </video>
 </div>
+{% textalign center %}
+If by any chance the video doesn't play, it's also available on [Youtube](https://www.youtube.com/watch?v=Wia_u0LE6kw).
+{% endtextalign %}
 
 {% section_title Features %}
 
