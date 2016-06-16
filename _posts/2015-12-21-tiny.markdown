@@ -20,7 +20,7 @@ facebook:
 Say goodbye to boring and uninformative screen shots names. Everytime you take screen shot of your Mac, Tiny will rename your screen shot into a meaningful file name. Tiny does not have a window. It lives in your Mac’s Menu Bar. Tiny renames your screen shot based on the front most application’s window. For Safari and Chrome, Tiny even renames the screen shot with the URL and title of the active tab. Tiny can also automatically open quick look after you take screen shot.
 {% endtextalign %}
 
-{% download direct | /assets/files/tiny/Tiny.zip | Download v1.0.6 (BETA) %}
+{% download direct | https://kaomojiformac.github.io/tiny-download/Tiny.zip | Download v1.0.7 (BETA) %}
 
 {% footnote %}
 - Installation: Simply download the zip and extract. Copy the Tiny.app to /Applications folder then double click to run.
