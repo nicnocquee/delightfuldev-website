@@ -4,7 +4,7 @@ title:  "Tiny for Mac"
 subtitle: "OSX Screen Capture. Upgraded."
 date:   2015-12-21 12:32:24
 categories: mac
-permalink: "tiny"
+permalink: "tiny/index.html"
 device: "macbook"
 app_preview: "/images/tiny/preview-tiny.png"
 name: "Tiny"
