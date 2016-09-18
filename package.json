@@ -1,5 +1,6 @@
 {
   "name": "DelightfulDev2.0",
+  "homepage": "http://www.delightfuldev.com",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
