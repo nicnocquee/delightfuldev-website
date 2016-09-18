@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: #343434;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?91402418');
+  src: url('./font/fontello.eot?91402418#iefix') format('embedded-opentype'),
+       url('./font/fontello.woff?91402418') format('woff'),
+       url('./font/fontello.ttf?91402418') format('truetype'),
+       url('./font/fontello.svg?91402418#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon
+{
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+div.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+div.header > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+div.absoluteFit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.absoluteFit > h1 {
+  font-size: 5em;
+  color: white;
+  text-shadow: 0px 1px #262626;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+div.absoluteFit > h2 {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: white;
+  text-shadow: 0px 1px #262626;
+  margin-bottom: 0;
+}
+
+div.absoluteFit > h3 {
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: white;
+  text-shadow: 0px 1px #262626;
+  margin-bottom: 0;
+}
+
+div.absoluteFit > img {
+  width: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+div.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.feature > h2 {
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+div.feature > img {
+  width: 100%;
+}
+
+.feature {
+  padding: 1em;
+  width: 50%;
+  margin-top: 5em;
+}
+
+div.footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #222125;
+  color: white;
+}
+
+div.getstarted1 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+  background-color: #34495e;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+div.getstarted1 > a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+div.getstarted {
+  margin-top: 5em;
+  margin-bottom: 7em;
+}
+
+div.getstarted > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 0.6em;
+  background-color: deepskyblue;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+div.footer > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+div.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  margin-top: 5em;
+}
+
+div.action {
+  flex: 0.5;
+  padding: 1.5em 0 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.action > p {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+div.action > img {
+  width: 100px;
+}
+
+@media (max-width: 414px) {
+  div.absoluteFit > h1 {
+    font-size: 2em;
+  }
+
+  div.absoluteFit > h2 {
+    font-size: 1em;
+  }
+
+  div.absoluteFit > h3 {
+    font-size: 0.8em;
+  }
+
+  div.header {
+    height: 31.5vh;
+  }
+
+  div.absoluteFit > img {
+    width: 4em;
+  }
+}
+
+@media (max-width: 320px) {
+  div.absoluteFit > h1 {
+    font-size: 1em;
+  }
+
+  div.absoluteFit > h2 {
+    font-size: 0.8em;
+  }
+
+  div.absoluteFit > h3 {
+    font-size: 0.5em;
+  }
+}
