@@ -3,6 +3,7 @@ import { Router, Route, browserHistory } from 'react-router'
 import './App.css';
 import Landing from './Landing'
 import Apps from './Apps'
+import AppPage from './AppPage'
 
 class App extends Component {
   render() {
@@ -11,6 +12,8 @@ class App extends Component {
         <Router history={browserHistory}>
           <Route path="/" component={Landing} />
           <Route path="/apps" component={Apps} />
+          <Route path="/(:name)" component={AppPage} />
+
         </Router>
 
         <div className="footer">
