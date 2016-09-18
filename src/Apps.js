@@ -56,11 +56,11 @@ class Apps extends Component {
     }
     const categories = (
       <div className="categories">
-        <a href="#" className={(isSelected.all === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'all'}) }}>All</a>
-        <a href="#" className={(isSelected.mac === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'mac'}) }}>Mac</a>
-        <a href="#" className={(isSelected.iphone === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'iphone'}) }}>iPhone</a>
-        <a href="#" className={(isSelected.game === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'game'}) }}>Game</a>
-        <a href="#" className={(isSelected.web === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'web'}) }}>Web</a>
+        <a className={(isSelected.all === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'all'}) }}>All</a>
+        <a className={(isSelected.mac === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'mac'}) }}>Mac</a>
+        <a className={(isSelected.iphone === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'iphone'}) }}>iPhone</a>
+        <a className={(isSelected.game === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'game'}) }}>Game</a>
+        <a className={(isSelected.web === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'web'}) }}>Web</a>
       </div>
     )
     return (
@@ -76,11 +76,11 @@ class Apps extends Component {
           <Media maxWidth={667}>
             <div className="inner">
               <div className="categories">
-                <a href="#" className={(isSelected.all === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'all'}) }}>All</a>
-                <a href="#" className={(isSelected.mac === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'mac'}) }}>Mac</a>
-                <a href="#" className={(isSelected.iphone === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'iphone'}) }}>iPhone</a>
-                <a href="#" className={(isSelected.game === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'game'}) }}>Game</a>
-                <a href="#" className={(isSelected.web === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'web'}) }}>Web</a>
+                <a className={(isSelected.all === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'all'}) }}>All</a>
+                <a className={(isSelected.mac === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'mac'}) }}>Mac</a>
+                <a className={(isSelected.iphone === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'iphone'}) }}>iPhone</a>
+                <a className={(isSelected.game === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'game'}) }}>Game</a>
+                <a className={(isSelected.web === false ? "normal": "")} onClick={e => { this.setState({selectedCategory: 'web'}) }}>Web</a>
               </div>
             </div>
           </Media>
@@ -93,12 +93,12 @@ class Apps extends Component {
                 {row.map((app, index2) => {
                   return (
                     <div key={index2} className="app">
-                      <a href={app.url}>
+                      <Link to={'/'+app.url}>
                         <img src={app.icon} alt=""/>
                         <h2>{app.title}</h2>
                         <h3>{app.subtitle}</h3>
                         <h4>{app.categories.join(', ').toUpperCase()}</h4>
-                      </a>
+                      </Link>
                     </div>
                   )
                 })}

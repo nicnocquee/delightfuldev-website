@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router'
 import Helmet from "react-helmet"
 import './App.css';
 import Landing from './Landing'
@@ -18,7 +18,7 @@ class App extends Component {
                     {"property": "og:image", "content": facebookCover},
                 ]}
         />
-        <Router history={browserHistory}>
+        <Router history={hashHistory}>
           <Route path="/" component={Landing} />
           <Route path="/apps" component={Apps} />
           <Route path="/(:name)" component={AppPage} />

@@ -12,7 +12,7 @@ class AppPage extends Component {
         <div className="bar">
           <div className="inner">
             <Link to="/">DelightfulDev</Link>
-            <a href="/apps">Apps</a>
+            <Link to="/apps">Apps</Link>
           </div>
         </div>
         <div className="content">

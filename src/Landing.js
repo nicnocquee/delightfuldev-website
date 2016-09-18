@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import features from './features'
 import idea from './idea.png'
 import apps from './apps.png'
@@ -48,10 +49,10 @@ class Landing extends Component {
             </a>
           </div>
           <div className="action" style={{backgroundColor: '#6CC4FF'}}>
-            <a href="/apps">
+            <Link to="/apps">
               <img src={apps} alt="" />
               <p>Check out our apps!</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
