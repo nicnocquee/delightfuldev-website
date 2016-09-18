@@ -12,6 +12,8 @@ import appoloContent from './appolo'
 import meeruContent from './meeru'
 import noriContent from './nori'
 import make9Content from './make9'
+import burztContent from './burzt'
+import tinyContent from './tiny'
 
 const showcase = [
   {
@@ -56,6 +58,7 @@ const showcase = [
     id: 'burzt',
     subtitle: 'Bring those burst photos to life',
     url: 'burzt',
+    content: burztContent,
     categories: ['iphone']
   },
   {
@@ -64,6 +67,7 @@ const showcase = [
     subtitle: 'OSX Screen Capture. Upgraded.',
     url: 'tiny',
     id: 'tiny',
+    content: tinyContent,
     categories: ['mac']
   },
   {

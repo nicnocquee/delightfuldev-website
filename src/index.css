@@ -364,13 +364,17 @@ div.app_page_paragraph {
 }
 
 .download {
-  background-color: #27ae60;
+  background-color: #f39c12;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 2em;
   padding-right: 2em;
   border-radius: 8px;
   font-size: 1.3em;
+}
+
+.download_android {
+  background-color: #2ecc71;
 }
 
 @media (max-width: 1024px) {

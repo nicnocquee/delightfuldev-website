@@ -15,7 +15,7 @@ class Make9 extends Component {
         </div>
 
         <div style={{marginTop: '3em'}}>
-          <a className="download" href="https://play.google.com/store/apps/details?id=com.delightfuldev.make9&referrer=utm_source%3Dhomepage%26utm_medium%3Dwebsite%26anid%3Dadmob">Play Store</a>
+          <a className="download download_android" href="https://play.google.com/store/apps/details?id=com.delightfuldev.make9&referrer=utm_source%3Dhomepage%26utm_medium%3Dwebsite%26anid%3Dadmob">Play Store</a>
         </div>
       </div>
     )
