@@ -165,7 +165,7 @@ div.getstarted1 {
   padding-top: 2em;
   padding-bottom: 2em;
   color: white;
-  background-color: #34495e;
+  background-color: #222125;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -428,6 +428,10 @@ div.app_page_paragraph {
   div.categories {
     width: 100%;
     margin-top: 10px;
+  }
+
+  .download {
+    font-size: 1em;
   }
 }
 

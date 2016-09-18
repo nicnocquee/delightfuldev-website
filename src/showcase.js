@@ -20,7 +20,7 @@ const showcase = [
     icon: appolo,
     title: 'Appolo',
     id: 'appolo',
-    subtitle: 'Showcase your app. With style.',
+    subtitle: 'Showcase your apps. With style.',
     url: 'appolo',
     content: appoloContent,
     categories: ['web']
@@ -90,7 +90,7 @@ const showcase = [
     icon: kaomoji,
     title: 'Kaomoji',
     id: 'kaomoji',
-    subtitle: 'Quickly add 顔文字 on Mac.',
+    subtitle: 'Quickly add 顔文字 anywhere on the Mac.',
     url: 'http://www.kaomojiapp.com',
     categories: ['mac']
   },
