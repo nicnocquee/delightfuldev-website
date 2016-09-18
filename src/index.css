@@ -350,6 +350,11 @@ div.app_page > div.content {
   padding-right: 10px;
 }
 
+div.app_page > div.content > h2{
+  opacity: 0.5;
+  margin-bottom: 3em;
+}
+
 div.app_page_paragraph {
   width: 70%;
 }

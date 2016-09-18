@@ -10,6 +10,7 @@ import kaomoji from './kaomoji.png'
 
 import appoloContent from './appolo'
 import meeruContent from './meeru'
+import noriContent from './nori'
 
 const showcase = [
   {
@@ -36,6 +37,7 @@ const showcase = [
     id: 'nori',
     subtitle: 'Create Photo Strips. Easily and quickly.',
     url: 'nori',
+    content: noriContent,
     categories: ['mac']
   },
   {
