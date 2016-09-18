@@ -11,6 +11,7 @@ import kaomoji from './kaomoji.png'
 import appoloContent from './appolo'
 import meeruContent from './meeru'
 import noriContent from './nori'
+import make9Content from './make9'
 
 const showcase = [
   {
@@ -46,6 +47,7 @@ const showcase = [
     id: 'make9',
     subtitle: 'Number Puzzle Game for Android and iOS.',
     url: 'make9',
+    content: make9Content,
     categories: ['iphone', 'android', 'game']
   },
   {
