@@ -4,15 +4,18 @@ import './App.css';
 import features from './features'
 import idea from './idea.png'
 import apps from './apps.png'
+import Media from './Media'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="header">
-          <video autoPlay="true" loop="true">
-            <source type="video/mp4" src="https://www.dropbox.com/s/6o1b3yl7qg3vmfm/01.mp4?dl=1" />
-          </video>
+          <Media minWidth={415}>
+            <video autoPlay="true" loop="true">
+              <source type="video/mp4" src="https://www.dropbox.com/s/6o1b3yl7qg3vmfm/01.mp4?dl=1" />
+            </video>
+          </Media>
           <div className="absoluteFit">
             <img src={logo} />
             <h1 className="title">DelightfulDev</h1>

@@ -234,12 +234,19 @@ div.action > img {
     font-size: 0.8em;
   }
 
-  div.header {
-    height: 31.5vh;
+  div.absoluteFit {
+    background: #ffffff url("header.png") no-repeat center top;
+    background-size: cover;
   }
 
   div.absoluteFit > img {
     width: 4em;
+  }
+
+  .feature {
+    padding: 1em;
+    width: 90%;
+    margin-top: 5em;
   }
 }
 
