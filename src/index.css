@@ -58,6 +58,12 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 div.header {
   height: 100vh;
   width: 100%;
@@ -228,6 +234,101 @@ div.action > a > p {
 
 div.action > a > img {
   width: 100px;
+}
+
+div.bar {
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.categories {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.categories > a.normal {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+div.bar > div > a {
+  color: white;
+  text-decoration: none;
+}
+
+div.appsContainer {
+  min-height: 81vh;
+  margin-bottom: 3em;
+}
+
+div.apps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+div.appsNotFirstRow {
+  margin-top: 1em;
+}
+
+div.app {
+  padding: 20px;
+  width: 20%;
+  color: #222125;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgba(44, 62, 80,0.3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-style: solid;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-height: 200px;
+}
+
+div.app > a {
+  color: #222125;
+}
+
+div.app > a > img {
+  max-width: 100px;
+}
+
+div.app > a > h2, h3, h4 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+div.app > a > h2 {
+  font-weight: normal;
+}
+
+div.app > a > h3, h4 {
+  font-weight: lighter;
+}
+
+div.app > a > h4 {
+  color: #95a5a6;
 }
 
 @media (max-width: 667px) {
