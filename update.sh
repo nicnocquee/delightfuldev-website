@@ -1,5 +1,5 @@
 #!/bin/sh
-
+npm run build
 git checkout -B gh-pages
 git add -f build
 echo "www.delightfuldev.com" > CNAME
