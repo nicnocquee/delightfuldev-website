@@ -9,6 +9,7 @@ import delightful from './delightful.png'
 import kaomoji from './kaomoji.png'
 
 import appoloContent from './appolo'
+import meeruContent from './meeru'
 
 const showcase = [
   {
@@ -26,6 +27,7 @@ const showcase = [
     id: 'meeru',
     subtitle: 'Multiple videos. At the same time.',
     url: 'meeru',
+    content: meeruContent,
     categories: ['mac']
   },
   {
