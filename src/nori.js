@@ -5,7 +5,7 @@ class Nori extends Component {
   render() {
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={noriOnDevices} className="app_page_img" />
+        <img src={noriOnDevices} className="app_page_img" alt="" />
         <div className="app_page_paragraph">
           <p>
  Have you ever tried to show two images side by side for comparison? Maybe to compare two graphs showing simulation results. Or to compare multiple screenshots. Nori for Mac is designed to help you create photo strips quickly. Simply drag and drop images to Nori, or select multiple images in Finder and open Nori from the right click menu. </p>

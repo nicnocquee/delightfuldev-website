@@ -5,7 +5,7 @@ class Make9 extends Component {
   render() {
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={make9OnDevices} className="app_page_img" />
+        <img src={make9OnDevices} className="app_page_img" alt="" />
         <div className="app_page_paragraph">
           <p>
  Make9 is a simple puzzle number game where the objective is to make 「9」 by tapping the numbers and operators. The playful colors and fun background music makes it perfect to play when you’re on the train, waiting for your friend at the mall, etc. The dark mode makes it pleasant to play Make9 before you sleep.           </p>

@@ -5,7 +5,7 @@ class Burzt extends Component {
   render() {
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={burztOnDevices} className="app_page_img" />
+        <img src={burztOnDevices} className="app_page_img" alt="" />
         <div className="app_page_paragraph">
           <p>
  Burzt is a simple iPhone app convert burst photos to GIF or video. Tap the play button to see your burst photo animating. Change the duration. Share to Twitter, Email, or to your Mac via AirDrop. It’s that simple.

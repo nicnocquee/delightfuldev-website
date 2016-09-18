@@ -16,7 +16,7 @@ class AppPage extends Component {
           </div>
         </div>
         <div className="content">
-          <img src={app.icon} />
+          <img src={app.icon}  alt=""/>
           <h1>{app.title}</h1>
           <h2>{app.subtitle}</h2>
           {<app.content />}

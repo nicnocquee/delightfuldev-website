@@ -5,7 +5,7 @@ class Meeru extends Component {
   render() {
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={meeruOnDevices} className="app_page_img" />
+        <img src={meeruOnDevices} className="app_page_img" alt="" />
         <div className="app_page_paragraph">
           <p>
            Meeru is the app that allows you to play multiple videos from streaming websites at the same time.

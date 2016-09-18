@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import Showcase from './showcase'
 import Media from './Media'
-import AppPage from './AppPage'
 
 class Apps extends Component {
   constructor(props) {
