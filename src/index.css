@@ -69,7 +69,7 @@ div.header {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #34495e;
+  background-color: black;
 }
 
 div.header > video {
@@ -78,7 +78,7 @@ div.header > video {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 div.absoluteFit {
@@ -303,7 +303,7 @@ div.app {
   border-style: solid;
   margin-left: 5px;
   margin-right: 5px;
-  min-height: 200px;
+  height: 200px;
 }
 
 div.app > a {
@@ -329,6 +329,18 @@ div.app > a > h3, h4 {
 
 div.app > a > h4 {
   color: #95a5a6;
+}
+
+@media (max-width: 1024px) {
+  div.apps {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  div.app {
+    width: 40%;
+  }
 }
 
 @media (max-width: 667px) {
@@ -357,6 +369,15 @@ div.app > a > h4 {
     padding: 1em;
     width: 90%;
     margin-top: 5em;
+  }
+
+  div.app {
+    width: 80%;
+  }
+
+  div.categories {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
