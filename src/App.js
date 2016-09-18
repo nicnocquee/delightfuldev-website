@@ -7,11 +7,13 @@ import apps from './apps.png'
 import Media from './Media'
 
 class App extends Component {
+
   render() {
+    console.log(window.innerWidth);
     return (
       <div className="App">
         <div className="header">
-          <Media minWidth={415}>
+          <Media minWidth={668}>
             <video autoPlay="true" loop="true">
               <source type="video/mp4" src="https://www.dropbox.com/s/6o1b3yl7qg3vmfm/01.mp4?dl=1" />
             </video>
@@ -42,12 +44,16 @@ class App extends Component {
 
         <div className="actions">
           <div className="action" style={{backgroundColor: '#21D6B2'}}>
-            <img src={idea} />
-            <p>Let's make your app!</p>
+            <a target="_blank" href="https://delightfuldev.typeform.com/to/rGiSR9">
+              <img src={idea} />
+              <p>Let's make your app!</p>
+            </a>
           </div>
           <div className="action" style={{backgroundColor: '#6CC4FF'}}>
-            <img src={apps} />
-            <p>Check out our apps!</p>
+            <a target="_blank" href="apps">
+              <img src={apps} />
+              <p>Check out our apps!</p>
+            </a>
           </div>
         </div>
 
