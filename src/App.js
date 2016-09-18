@@ -18,7 +18,7 @@ class App extends Component {
                     {"property": "og:image", "content": facebookCover},
                 ]}
         />
-        <Router history={hashHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
           <Route path="/" component={Landing} />
           <Route path="/apps" component={Apps} />
           <Route path="/(:name)" component={AppPage} />
