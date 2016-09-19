@@ -1,5 +1,6 @@
 #!/bin/sh
 npm run build
+cp ./src/delightfuldev-facebook-cover.png ./build/static/media/delightfuldev-facebook-cover.png
 git checkout -B gh-pages
 git add -f build
 git commit -am "Rebuild website"

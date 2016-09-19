@@ -5,19 +5,11 @@ import './App.css';
 import Landing from './Landing'
 import Apps from './Apps'
 import AppPage from './AppPage'
-import facebookCover from './delightfuldev-facebook-cover.png'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Helmet
-          itle="DelightfulDev"
-          meta={[
-                    {"name": "description", "content": "Apps and Web Development in Basel Switzerland"},
-                    {"property": "og:image", "content": facebookCover},
-                ]}
-        />
         <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
           <Route path="/" component={Landing} />
           <Route path="/apps" component={Apps} />
