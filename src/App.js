@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 import Helmet from "react-helmet"
 import './App.css';
 import Landing from './Landing'
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
           <Route path="/" component={Landing} />
           <Route path="/apps" component={Apps} />
           <Route path="/(:name)" component={AppPage} />
