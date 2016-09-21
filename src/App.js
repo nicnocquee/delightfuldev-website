@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Router, Route, browserHistory } from 'react-router'
-import Helmet from "react-helmet"
 import './App.css';
 import Landing from './Landing'
 import Apps from './Apps'
