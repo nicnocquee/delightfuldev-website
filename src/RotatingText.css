@@ -19,6 +19,12 @@
   padding-right: 10px;
 }
 
+.visible {
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .example-enter {
   opacity: 0.01;
   transform: translateY(40px);
@@ -39,5 +45,4 @@
   opacity: 0.01;
   transform: translateY(-40px);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
-
 }

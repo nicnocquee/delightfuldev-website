@@ -40,7 +40,7 @@ class Landing extends Component {
         </div>
 
         <div className="getstarted1" onClick={e => {document.location.href=typeformLink}}>
-          <a href={typeformLink}>Have {<RotatingText texts={texts} />} idea? Let's get started!</a>
+          <a href={typeformLink}>Have {<RotatingText texts={texts} />} idea? <span className="letsgetstarted">Let's get started!</span></a>
         </div>
 
         <div className="features">
@@ -49,7 +49,7 @@ class Landing extends Component {
               <div className="feature" key={ind}>
                 <img src={feat.image} alt="" />
                 <h2>{feat.title}</h2>
-                <p>{feat.body}</p>
+                <p dangerouslySetInnerHTML={{__html: feat.body}} />
               </div>
             )
           })}

@@ -183,6 +183,11 @@ div.getstarted {
   margin-bottom: 7em;
 }
 
+.letsgetstarted {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
 div.getstarted > a {
   text-decoration: none;
   color: white;

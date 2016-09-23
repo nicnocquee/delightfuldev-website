@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './RotatingText.css'
 import './css/animate.css'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import Media from './Media'
 
 class RotatingText extends Component {
   constructor(props) {
@@ -38,13 +39,20 @@ class RotatingText extends Component {
     var invisibleText = text
     return (
       <span style={{position: 'relative'}}>
-        <p className="invisible">{invisibleText}</p>
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={700}
-          transitionLeaveTimeout={500}>
-          <p key={text} className="rotatingText">{text}</p>
-        </ReactCSSTransitionGroup>
+        <Media minWidth={668}>
+          <span>
+            <p className="invisible">{invisibleText}</p>
+            <ReactCSSTransitionGroup
+              transitionName="example"
+              transitionEnterTimeout={700}
+              transitionLeaveTimeout={500}>
+              <p key={text} className="rotatingText">{text}</p>
+            </ReactCSSTransitionGroup>
+          </span>
+        </Media>
+        <Media maxWidth={667}>
+          <p className="visible">{invisibleText}</p>
+        </Media>
       </span>
     )
   }

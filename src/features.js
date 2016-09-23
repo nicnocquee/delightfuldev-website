@@ -16,7 +16,7 @@ const features = [
   {
     image: rocket,
     title: "Comprehensive Testing",
-    body: "Test is a first class citizen in our development process. Here's a secret. Many apps don't go through a thorough testing process, because testing is not a trivial process. But testing is critical. It can prevent crashes and it keeps the app from breaking in future updates."
+    body: "Test is a first class citizen in our development process. Here's a secret. Many apps don't go through a thorough testing process, because testing is not a trivial process. But testing is critical. It can prevent crashes and it keeps the app from breaking in future updates. <em>Less crashes, more profit.</em>"
   }
 ]
 
