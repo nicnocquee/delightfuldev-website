@@ -1,0 +1,43 @@
+.rotatingText {
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  right: 0;
+}
+
+.nextText {
+  opacity: 0;
+}
+
+.invisible {
+  font-weight: bolder;
+  color: transparent;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.example-enter {
+  opacity: 0.01;
+  transform: translateY(40px);
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform: translateY(-40px);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+
+}

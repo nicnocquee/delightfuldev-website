@@ -6,9 +6,23 @@ import apps from './apps.png'
 import logo from './logo.png';
 import Media from './Media'
 import headerMp4 from './header.mp4'
+import RotatingText from './RotatingText'
 
 class Landing extends Component {
   render() {
+    const texts = [
+      'a Photos app',
+      'a Fitness app',
+      'a Social app',
+      'a Puzzle game',
+      'a Lifestyle app',
+      'an Education app',
+      'a Music app',
+      'a Finance app',
+      'a Sleeping app',
+      'a Children game app'
+    ]
+    const typeformLink = "https://delightfuldev.typeform.com/to/rGiSR9"
     return (
       <div>
         <div className="header">
@@ -25,8 +39,8 @@ class Landing extends Component {
           </div>
         </div>
 
-        <div className="getstarted1">
-          <a href="https://delightfuldev.typeform.com/to/rGiSR9">Have an app idea? Let's get started!</a>
+        <div className="getstarted1" onClick={e => {document.location.href=typeformLink}}>
+          <a href={typeformLink}>Have {<RotatingText texts={texts} />} idea? Let's get started!</a>
         </div>
 
         <div className="features">
@@ -43,7 +57,7 @@ class Landing extends Component {
 
         <div className="actions">
           <div className="action" style={{backgroundColor: '#21D6B2'}}>
-            <a target="_blank" href="https://delightfuldev.typeform.com/to/rGiSR9">
+            <a target="_blank" href={typeformLink}>
               <img src={idea} alt="" />
               <p>Let's make your app!</p>
             </a>
