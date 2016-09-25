@@ -91,14 +91,31 @@ class Apps extends Component {
             return (
               <div className={(index === 0) ? "apps" : "apps appsNotFirstRow"} key={index}>
                 {row.map((app, index2) => {
-                  return (
-                    <div key={index2} className="app">
-                      <Link to={'/'+app.url}>
+                  var content
+                  var url = app.url
+                  if (url.indexOf('http') !== 0) {
+                    url = '/' + url
+                    content = (
+                      <Link to={url}>
                         <img src={app.icon} alt=""/>
                         <h2>{app.title}</h2>
                         <h3>{app.subtitle}</h3>
                         <h4>{app.categories.join(', ').toUpperCase()}</h4>
                       </Link>
+                    )
+                  } else {
+                    content = (
+                      <a href={url}>
+                        <img src={app.icon} alt=""/>
+                        <h2>{app.title}</h2>
+                        <h3>{app.subtitle}</h3>
+                        <h4>{app.categories.join(', ').toUpperCase()}</h4>
+                      </a>
+                    )
+                  }
+                  return (
+                    <div key={index2} className="app">
+                      {content}
                     </div>
                   )
                 })}

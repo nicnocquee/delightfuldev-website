@@ -11,5 +11,5 @@ npm run build
 # git push -f origin gh-pages
 # git checkout -
 
-scp -r build/ <username>@delightfuldev.com:/home/<username>/html
+scp -r build/ "$1@delightfuldev.com:/home/$1/html"
 echo "Now log in to server, then sudo cp -R html/ /var/www/ && rm -rf html"
