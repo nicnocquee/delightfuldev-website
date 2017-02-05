@@ -10,6 +10,6 @@ npm run build
 # git commit -am "Rebuild website"
 # git push -f origin gh-pages
 # git checkout -
-
+# scp -r build/ "nico@delightfuldev.com:/home/nico/html"
 scp -r build/ "$1@delightfuldev.com:/home/$1/html"
 echo "Now log in to server, then sudo cp -R html/ /var/www/ && rm -rf html"

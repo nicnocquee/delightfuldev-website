@@ -71,7 +71,7 @@ class Apps extends Component {
             <Media minWidth={668}>
               {categories}
             </Media>
-            <a href="https://delightfuldev.typeform.com/to/rGiSR9">Make your app</a>
+            <a href="https://goo.gl/forms/8sVJGNo8s1TF0P4H3">Make your app</a>
           </div>
           <Media maxWidth={667}>
             <div className="inner">

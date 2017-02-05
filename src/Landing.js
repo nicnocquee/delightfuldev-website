@@ -22,7 +22,7 @@ class Landing extends Component {
       'a Sleeping app',
       'a Children game app'
     ]
-    const typeformLink = "https://delightfuldev.typeform.com/to/rGiSR9"
+    const typeformLink = "https://goo.gl/forms/8sVJGNo8s1TF0P4H3"
     return (
       <div>
         <div className="header">
@@ -39,8 +39,8 @@ class Landing extends Component {
           </div>
         </div>
 
-        <div className="getstarted1" onClick={e => {document.location.href=typeformLink}}>
-          <a href={typeformLink}>Have {<RotatingText texts={texts} />} idea? <span className="letsgetstarted">Let's get started!</span></a>
+        <div className="getstarted1">
+          <a href={typeformLink} target="_blank">Have {<RotatingText texts={texts} />} idea? <span className="letsgetstarted">Let's get started!</span></a>
         </div>
 
         <div className="features">
